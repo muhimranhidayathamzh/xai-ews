@@ -1,0 +1,7 @@
+hazard,kategori,spearman_rho,spearman_pval,sign_agree_pct,top1_lime,top1_shap,top1_match,top2_overlap
+longsor,high,0.8857,0.0188,66.7,ndvi,ndvi,True,1
+longsor,low,0.5429,0.2657,83.3,ndvi,ndvi,True,2
+longsor,border,0.3143,0.5441,83.3,ndvi,aspect,False,1
+banjir,high,0.8286,0.0416,100.0,elevasi,elevasi,True,1
+banjir,low,0.8286,0.0416,100.0,twi,ndvi,False,1
+banjir,border,0.9429,0.0048,100.0,twi,twi,True,1

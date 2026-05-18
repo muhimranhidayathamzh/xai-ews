@@ -1,0 +1,7 @@
+hazard,kategori,F_narasi,top_k_shap,k,overlap,coherence_pct
+longsor,high,"['aspect', 'ndvi', 'slope']","['aspect', 'ndvi', 'slope']",3,3,100.0
+longsor,low,"['ndvi', 'slope']","['aspect', 'ndvi']",2,1,50.0
+longsor,border,"['aspect', 'jarak_sungai_km', 'slope']","['aspect', 'jarak_sungai_km', 'slope']",3,3,100.0
+banjir,high,"['elevasi', 'ndvi']","['elevasi', 'ndvi']",2,2,100.0
+banjir,low,"['ndvi', 'twi']","['ndvi', 'twi']",2,2,100.0
+banjir,border,"['aspect', 'ndvi', 'twi']","['elevasi', 'ndvi', 'twi']",3,2,66.7

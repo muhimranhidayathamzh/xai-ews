@@ -1,0 +1,7 @@
+hazard,kategori,F_narasi,total_shap_mag,narasi_shap_mag,ip_pct,status
+longsor,high,"['aspect', 'ndvi', 'slope']",0.4617,0.4097,88.7,⚠️ Tinggi (terlalu teknis)
+longsor,low,"['ndvi', 'slope']",0.4832,0.3863,79.9,✅ Optimal
+longsor,border,"['aspect', 'jarak_sungai_km', 'slope']",0.3004,0.2482,82.6,⚠️ Tinggi (terlalu teknis)
+banjir,high,"['elevasi', 'ndvi']",0.39,0.2146,55.0,⚠️ Rendah
+banjir,low,"['ndvi', 'twi']",0.4156,0.2185,52.6,⚠️ Rendah
+banjir,border,"['aspect', 'ndvi', 'twi']",0.426,0.2984,70.0,✅ Optimal

@@ -1,0 +1,77 @@
+=================================================================
+  NB3 — THREE-LEVEL XAI FRAMEWORK — RINGKASAN HASIL
+  XAI-EWS v3.0 | Luwu Raya, Sulawesi Selatan
+=================================================================
+
+── MODEL ──────────────────────────────────────────────────
+  Longsor : RF Calibrated (isotonic) | 6 fitur
+  Banjir  : RF Calibrated (isotonic) | 6 fitur
+  Spatial CV AUC: Longsor=0.9916±0.008, Banjir=0.9481±0.041
+
+── LEVEL 1 — GLOBAL ────────────────────────────────────────
+  Top feature longsor: ndvi (mean|SHAP|=0.331, rank #1)
+  Top feature banjir : ndvi (rank #1), elevasi (rank #2)
+  Consistent features (kedua hazard): ndvi, aspect, elevasi, jarak_sungai_km, curah_hujan
+  Longsor-specific: slope | Banjir-specific: twi
+  Cross-hazard contrast terbesar: elevasi (rank #6 longsor vs #2 banjir)
+  NDVI direction: BERLAWANAN antara hazard
+    Longsor: NDVI tinggi → risiko lebih tinggi (proxy terrain highland)
+    Banjir : NDVI tinggi → protektif (threshold >0.65)
+
+── LEVEL 2 — LOCAL ─────────────────────────────────────────
+  6 instance terpilih (3 longsor × 3 banjir): semua correctly predicted ✅
+  Temuan kunci L2:
+    • Longsor HIGH: ndvi dominan (+0.299) — SHAP 5× lebih besar dari fitur #2
+    • Longsor BORDER: ASPECT dominan (+0.165), bukan ndvi — local ≠ global
+    • Banjir HIGH: semua fitur mendorong risiko, tanpa faktor pelindung
+    • Banjir BORDER: competing forces ndvi(+0.121) vs twi(−0.121)
+
+── LEVEL 3 — NARRATIVE ─────────────────────────────────────
+  6 narasi 3-kalimat (5 communicative functions)
+  DRR grounding: Sendai Framework + BNPB
+  Unique K3: ✅ semua 6 berbeda
+  Refinement: NDVI longsor → framing asosiatif (v2)
+  LOW risk → K3 monitoring (bukan mitigasi aktif)
+
+── FRAMEWORK EVALUATION ────────────────────────────────────
+  (A) SHAP Fidelity R²: 1.0000 (longsor & banjir)
+  (B) Inter-Level Coherence L3←L2: 86.1% mean (4/6 instance = 100%)
+  (C) Information Preservation: 71.5% ± 15.0% mean (target 60–80%)
+  (D) LIME-SHAP Triangulasi:
+      Spearman ρ=0.724±0.244 | Sign agree=88.9%
+      Top-2 overlap: 6/6 instance
+
+── FILE OUTPUT ─────────────────────────────────────────────
+  checkpoints/shap_longsor.pkl
+  checkpoints/shap_banjir.pkl
+  checkpoints/instance_indices.pkl
+  checkpoints/lime_longsor.pkl
+  checkpoints/lime_banjir.pkl
+  results/crosshazard_table.csv
+  results/l2_profiles.csv
+  results/l3_narratives.csv
+  results/l3_drr_mapping.csv
+  results/lime_shap_comparison.csv
+  results/coherence_table.csv
+  results/fidelity_metrics.csv
+  results/preservation_scores.csv
+  results/xai_results.pkl
+
+── CONCERNS TERBUKA UNTUK PAPER ───────────────────────────
+  1. NDVI longsor: proxy highland, bukan efek kausal
+     → Wajib dijelaskan di Discussion + Limitations
+  2. Banjir dataset kecil (n=44, test=9)
+     → Gunakan Spatial CV AUC (0.9481) sebagai metrik utama
+  3. SHAP (RF base) ≠ probabilitas terkalibrasi
+     → 1 kalimat di Methods: SHAP explains RF base estimator
+  4. IP% banjir HIGH/LOW <60%: SHAP lebih merata di banjir
+     → Akui sebagai limitasi framework di banjir small-n
+  5. 'First domain-specific implementation' perlu verifikasi
+     → Literature review saat fase penulisan paper
+  6. Longsor BORDER: LIME-SHAP disagreement (ρ=0.314)
+     → Frame sebagai sifat borderline case, bukan kegagalan
+
+=================================================================
+  NB3 SELESAI — Semua deliverable Fase 3 terpenuhi
+  GitHub commit berikutnya: 'Phase 3: XAI framework complete'
+=================================================================

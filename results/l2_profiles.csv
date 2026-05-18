@@ -1,0 +1,7 @@
+hazard,kategori,prob,vs_regional,pendorong_1,pendorong_2,pendorong_3,pelindung_1,pelindung_2
+longsor,high,1.0,0.4951,ndvi,slope,jarak_sungai_km,aspect,
+longsor,low,0.0,-0.5049,slope,,,ndvi,aspect
+longsor,border,0.5907,0.0859,aspect,jarak_sungai_km,curah_hujan,slope,ndvi
+banjir,high,0.9398,0.4863,elevasi,ndvi,twi,,
+banjir,low,0.0,-0.4534,,,,ndvi,twi
+banjir,border,0.2554,-0.198,ndvi,aspect,jarak_sungai_km,twi,elevasi
