@@ -1,0 +1,79 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║         NB4 — MODEL EVALUATION LANJUTAN — SUMMARY           ║
+║         XAI-EWS v3.0 | 2026-05-19                      ║
+╚══════════════════════════════════════════════════════════════╝
+
+NOTEBOOK  : NB4_ModelEval.ipynb
+HAZARD    : Longsor + Banjir
+MODEL     : Random Forest (CalibratedClassifierCV, isotonic)
+SEED      : 42
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[4.1] CONFUSION MATRIX + ECE
+  Longsor  : Accuracy=0.9565 | F1=0.9565 | ECE=0.0460 | Brier=0.0362
+  Banjir   : Accuracy=1.0000 | F1=1.0000 | ECE=0.0998 | Brier=0.0164
+  ⚠️  Banjir metrics dari test set n=9 — tidak robust statistically
+  Primary metric banjir: Spatial CV AUC = 0.9481 ± 0.041
+
+[4.2] ROC + PR CURVE (RF best model)
+  Longsor  : AUC=0.9896 | AP=0.9880 | Lift=1.98×
+  Banjir   : AUC=1.0000 | AP=1.0000 | Lift=2.25× (ceiling, n=9)
+
+[4.3] MODEL COMPARISON SCORECARD
+  Longsor  : RF #1 (Composite=0.997) > LightGBM #2 (0.976)
+             LightGBM CV AUC lebih tinggi (0.9945) tapi RF menang
+             di Brier (0.036 vs 0.038) → multi-criteria justified
+  Banjir   : RF #1 (Composite=0.735) > XGBoost #2 (0.679)
+             LightGBM #4 meski CV AUC tertinggi (0.950) karena
+             Spatial AUC drop parah (0.902) → spatial overfitting
+
+[4.4] SENSITIVITY ANALYSIS (Ceteris paribus, 5th-95th pctile)
+  Longsor ranking: NDVI(1.000) > aspect(0.506) > slope(0.083)
+    → NDVI step-function threshold di ~0.45 (proxy highland)
+    → Aspect non-monotonic (NE+NW facing slopes lebih rentan)
+  Banjir ranking: elevasi(0.459) > ndvi(0.383) > twi(0.310)
+    → Elevasi negatif (lowland = flood prone) ✅ fisik benar
+    → NDVI arah berlawanan vs longsor (protektif di dataran)
+  Cross-hazard: NDVI dominan longsor / elevasi dominan banjir
+    → Justifikasi kuat untuk model terpisah per hazard
+
+[4.5] FEATURE ABLATION + CORRELATION
+  Longsor ablation: NDVI ΔAUC=+0.424 (dominant, near-random tanpa NDVI)
+    → Triangulasi 3 metode: SHAP + sensitivity + ablation konsisten
+    → Aspect: sensitivity tinggi tapi ablation ΔAUC=-0.003
+      (efek melalui interaksi, bukan marginal — RF artifact)
+  Banjir ablation: semua ΔAUC=0 (ceiling effect, AUC=1.0 baseline)
+    → Tidak informatif — SHAP Fase 3 sebagai alternatif
+  Korelasi longsor: semua |r|<0.50 ✅ (multikolinearitas rendah)
+  Korelasi banjir: elevasi-ndvi r=0.75, elevasi-twi r=-0.72,
+    ndvi-twi r=-0.71 (physiographic triad, RF robust) → documented
+
+[4.6] EXTERNAL VALIDATION
+  Status: TIDAK DAPAT DILAKUKAN (formal quantitative)
+  5 jalur dicoba: InaRISK portal, IRBI, MapServer, ImageServer, DIBI
+  Semua gagal karena aksesibilitas data / resolusi tidak sesuai
+  Proxy: DIBI kabupaten level — qualitative corroboration saja
+  Primary generalizability evidence: Spatial CV AUC
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+KEY FINDINGS UNTUK DISCUSSION PAPER:
+  1. NDVI dominan longsor via 3 metode independen (triangulasi)
+  2. LightGBM spatial overfitting banjir (ΔCVAUC-SpatialAUC=0.048)
+     → bukti empiris perlunya Spatial CV
+  3. NDVI arah berlawanan antar hazard → temuan cross-hazard
+  4. Aspect non-monotonic longsor → insight geomorfologis baru
+  5. Ablation-sensitivity mismatch (aspect) → RF interaction effect
+
+FIGURES MAIN TEXT (5):
+  nb4_confusion_matrix.png | nb4_scorecard_table.png
+  nb4_sensitivity_longsor.png | nb4_sensitivity_banjir.png
+  [4.7c] information_flow_diagram.png ← dibuat di cell berikutnya
+
+FIGURES SUPPLEMENTARY (3):
+  nb4_roc_curve.png | nb4_pr_curve.png
+  nb4_ablation.png  | nb4_correlation_heatmap.png
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

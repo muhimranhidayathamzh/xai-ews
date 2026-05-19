@@ -1,0 +1,7 @@
+EXTERNAL VALIDATION — DOKUMENTASI
+===========================================
+Upaya akses data resmi: 5 jalur dicoba, semua tidak berhasil.
+Keputusan: formal external validation tidak dilakukan.
+Primary validation: Spatial CV AUC (longsor 0.9916, banjir 0.9481).
+DIBI: qualitative corroboration saja.
+Framing paper: lihat nb4_summary.txt

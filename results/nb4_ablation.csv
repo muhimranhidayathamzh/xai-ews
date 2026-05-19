@@ -1,0 +1,13 @@
+Hazard,Fitur,AUC_full,AUC_ablasi,Delta_AUC
+longsor,elevasi,0.9896,0.9896,0.0
+longsor,slope,0.9896,0.9887,0.0009
+longsor,aspect,0.9896,0.9924,-0.0028
+longsor,curah_hujan,0.9896,0.9716,0.018
+longsor,ndvi,0.9896,0.5652,0.4244
+longsor,jarak_sungai_km,0.9896,0.9905,-0.0009
+banjir,elevasi,1.0,1.0,0.0
+banjir,aspect,1.0,1.0,0.0
+banjir,twi,1.0,1.0,0.0
+banjir,curah_hujan,1.0,1.0,0.0
+banjir,ndvi,1.0,1.0,0.0
+banjir,jarak_sungai_km,1.0,1.0,0.0
