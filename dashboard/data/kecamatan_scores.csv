@@ -1,0 +1,45 @@
+NAME_2,NAME_3,prob_banjir,risk_banjir,prob_longsor,n_titik,risk_longsor,no_data_longsor
+Luwu,Bajo,0.8887,high,1.0,1,high,False
+Luwu,Bajo Barat,0.1023,low,0.2611111111111111,4,medium,False
+Luwu,Bassesangtempe,0.0093,low,0.7686274509803921,17,high,False
+Luwu,Belopa,0.9483,high,0.0,0,low,True
+Luwu,Belopa Utara,0.95,high,0.0,0,low,True
+Luwu,Bua,0.2436,medium,0.6533334346382518,4,high,False
+Luwu,Bupon,0.2885,medium,0.6667853178803047,3,high,False
+Luwu,Kamanre,0.95,high,1.0,1,high,False
+Luwu,Lamasi,0.9249,high,0.0,0,low,True
+Luwu,Lamasi Timur,0.9486,high,0.0,0,low,True
+Luwu,Larompong,0.1305,medium,0.7666666666666666,3,high,False
+Luwu,Larompong Selatan,0.5922,medium,0.2143533613456155,1,medium,False
+Luwu,Latimojong,0.2554,medium,0.8024691358024691,9,high,False
+Luwu,Ponrang,0.9279,high,0.0,0,low,True
+Luwu,Ponrang Selatan,0.9403,high,0.0,0,low,True
+Luwu,Suli,0.9305,high,1.0,1,high,False
+Luwu,Suli Barat,0.1493,medium,0.837037037037037,6,high,False
+Luwu,Walenrang,0.077,low,1.0,1,high,False
+Luwu,Walenrang Barat,0.0058,low,0.6345161599929833,12,high,False
+Luwu,Walenrang Timur,0.9281,high,0.0,0,low,True
+Luwu,Walenrang Utara,0.0497,low,0.7209344459857284,3,high,False
+Luwu Timur,Angkona,0.6937,medium,0.5,2,medium,False
+Luwu Timur,Burau,0.02,low,0.5,4,medium,False
+Luwu Timur,Danau,0.825,medium,0.0,0,low,True
+Luwu Timur,Kalaena,0.4324,medium,0.0,0,low,True
+Luwu Timur,Malili,0.3609,medium,0.5335959999599758,7,medium,False
+Luwu Timur,Mangkutana,0.0,low,0.5305066780797875,14,medium,False
+Luwu Timur,Nuha,0.6371,medium,0.41978063866833604,8,medium,False
+Luwu Timur,Tomoni,0.0007,low,1.0,2,high,False
+Luwu Timur,Tomoni Timur,0.9229,high,0.0,0,low,True
+Luwu Timur,Towuti,0.0,low,0.4117647058823529,17,medium,False
+Luwu Timur,Wasuponda,0.0,low,0.31791755846752,13,medium,False
+Luwu Timur,Wotu,0.95,high,0.0,0,low,True
+Luwu Utara,Baebunta,0.8639,high,0.5,2,medium,False
+Luwu Utara,Bone-Bone,0.6985,medium,1.0,1,high,False
+Luwu Utara,Limbong,0.0,low,0.4719968765413838,19,medium,False
+Luwu Utara,Malangke,0.9344,high,0.0,0,low,True
+Luwu Utara,Malangke Barat,0.9398,high,0.0,0,low,True
+Luwu Utara,Mappedeceng,0.1609,medium,0.0,0,low,True
+Luwu Utara,Masamba,0.0,low,0.6312172747863246,16,high,False
+Luwu Utara,Rampi,0.0,low,0.12777777777777777,16,low,False
+Luwu Utara,Sabbang,0.0,low,0.40270428295425703,7,medium,False
+Luwu Utara,Seko,0.0,low,0.30296296296296293,30,medium,False
+Luwu Utara,Sukamaju,0.201,medium,0.34074074074074073,3,medium,False

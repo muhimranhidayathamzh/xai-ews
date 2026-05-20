@@ -1,0 +1,75 @@
+hazard,NAME_3,prob,vs_regional,pendorong_1,shap_p1,pendorong_2,shap_p2,pendorong_3,shap_p3,pelindung_1,shap_pel1,pelindung_2,shap_pel2
+longsor,Bajo,1.0,0.5837,ndvi,0.462,curah_hujan,0.0162,jarak_sungai_km,0.0079,slope,-0.0464,aspect,-0.0359
+longsor,Bajo Barat,0.2611,-0.1552,ndvi,0.3703,curah_hujan,0.0141,elevasi,0.0137,slope,-0.0592,aspect,-0.0392
+longsor,Bassesangtempe,0.7686,0.3523,ndvi,0.4295,slope,0.0336,curah_hujan,0.0247,aspect,-0.0343,,
+longsor,Bua,0.6533,0.237,ndvi,0.4261,slope,0.0357,curah_hujan,0.0217,aspect,-0.0351,elevasi,-0.0015
+longsor,Bupon,0.6668,0.2505,ndvi,0.4267,jarak_sungai_km,0.013,curah_hujan,0.0034,slope,-0.0415,aspect,-0.036
+longsor,Kamanre,1.0,0.5837,ndvi,0.4412,jarak_sungai_km,0.0152,curah_hujan,0.0108,slope,-0.0447,aspect,-0.0226
+longsor,Larompong,0.7667,0.3504,ndvi,0.3947,slope,0.0574,curah_hujan,0.0155,aspect,-0.0287,,
+longsor,Larompong Selatan,0.2144,-0.2019,slope,0.0679,jarak_sungai_km,0.0244,curah_hujan,0.0141,ndvi,-0.1259,aspect,-0.0585
+longsor,Latimojong,0.8025,0.3862,ndvi,0.4379,slope,0.028,jarak_sungai_km,0.0147,aspect,-0.0393,elevasi,-0.0019
+longsor,Suli,1.0,0.5837,ndvi,0.4119,slope,0.0169,jarak_sungai_km,0.0151,,,,
+longsor,Suli Barat,0.837,0.4207,ndvi,0.4623,curah_hujan,0.0142,jarak_sungai_km,0.0107,aspect,-0.0366,slope,-0.032
+longsor,Walenrang,1.0,0.5837,ndvi,0.402,slope,0.0274,curah_hujan,0.0229,aspect,-0.0303,jarak_sungai_km,-0.0051
+longsor,Walenrang Barat,0.6345,0.2182,ndvi,0.4417,slope,0.0244,jarak_sungai_km,0.0142,aspect,-0.0372,elevasi,-0.0015
+longsor,Walenrang Utara,0.7209,0.3046,ndvi,0.2541,slope,0.0451,jarak_sungai_km,0.0154,aspect,-0.0387,curah_hujan,-0.0001
+longsor,Angkona,0.5,0.0837,ndvi,0.3945,jarak_sungai_km,0.0244,elevasi,0.0025,curah_hujan,-0.1368,aspect,-0.038
+longsor,Burau,0.5,0.0837,ndvi,0.4265,slope,0.0344,jarak_sungai_km,0.0128,aspect,-0.0362,,
+longsor,Malili,0.5336,0.1173,ndvi,0.4285,jarak_sungai_km,0.0134,curah_hujan,0.0097,aspect,-0.04,slope,-0.0384
+longsor,Mangkutana,0.5305,0.1142,ndvi,0.4356,curah_hujan,0.0155,jarak_sungai_km,0.0155,aspect,-0.0354,elevasi,-0.0023
+longsor,Nuha,0.4198,0.0035,ndvi,0.4082,slope,0.0397,jarak_sungai_km,0.0133,aspect,-0.0383,,
+longsor,Tomoni,1.0,0.5837,ndvi,0.4266,slope,0.0276,jarak_sungai_km,0.0157,aspect,-0.0355,,
+longsor,Towuti,0.4118,-0.0045,ndvi,0.425,jarak_sungai_km,0.0139,curah_hujan,0.0021,aspect,-0.0406,slope,-0.0253
+longsor,Wasuponda,0.3179,-0.0984,ndvi,0.0588,slope,0.0328,jarak_sungai_km,0.0135,aspect,-0.0593,curah_hujan,-0.0017
+longsor,Baebunta,0.5,0.0837,ndvi,0.3353,aspect,0.0809,slope,0.0315,,,,
+longsor,Bone-Bone,1.0,0.5837,ndvi,0.3807,slope,0.0458,curah_hujan,0.0231,aspect,-0.0338,,
+longsor,Limbong,0.472,0.0557,ndvi,0.4268,jarak_sungai_km,0.0161,slope,0.0126,aspect,-0.0394,elevasi,-0.006
+longsor,Masamba,0.6312,0.2149,ndvi,0.4183,slope,0.033,jarak_sungai_km,0.0174,aspect,-0.0414,elevasi,-0.0036
+longsor,Rampi,0.1278,-0.2885,,,,,,,ndvi,-0.3481,aspect,-0.0735
+longsor,Sabbang,0.4027,-0.0136,slope,0.0259,jarak_sungai_km,0.0037,,,ndvi,-0.3855,aspect,-0.0763
+longsor,Seko,0.303,-0.1133,ndvi,0.2517,curah_hujan,0.0254,jarak_sungai_km,0.013,aspect,-0.0478,elevasi,-0.0057
+longsor,Sukamaju,0.3407,-0.0756,ndvi,0.4158,slope,0.0261,jarak_sungai_km,0.0116,aspect,-0.0387,,
+banjir,Bajo,0.8887,0.4368,elevasi,0.1584,twi,0.105,aspect,0.0255,ndvi,-0.0105,,
+banjir,Bajo Barat,0.1023,-0.3496,jarak_sungai_km,0.0153,,,,,twi,-0.1469,ndvi,-0.1094
+banjir,Bassesangtempe,0.0093,-0.4426,jarak_sungai_km,0.014,,,,,twi,-0.1444,elevasi,-0.1296
+banjir,Belopa,0.9483,0.4964,elevasi,0.1491,ndvi,0.1313,twi,0.1246,,,,
+banjir,Belopa Utara,0.95,0.4981,elevasi,0.1554,ndvi,0.1343,twi,0.125,,,,
+banjir,Bua,0.2436,-0.2083,aspect,0.0196,jarak_sungai_km,0.0136,,,twi,-0.1541,elevasi,-0.0682
+banjir,Bupon,0.2885,-0.1634,aspect,0.0213,twi,0.0108,,,ndvi,-0.0943,jarak_sungai_km,-0.0345
+banjir,Kamanre,0.95,0.4981,elevasi,0.1554,ndvi,0.1343,twi,0.1242,,,,
+banjir,Lamasi,0.9249,0.473,elevasi,0.141,twi,0.116,ndvi,0.075,,,,
+banjir,Lamasi Timur,0.9486,0.4967,elevasi,0.1517,ndvi,0.1315,twi,0.1234,curah_hujan,-0.009,,
+banjir,Larompong,0.1305,-0.3214,ndvi,0.033,aspect,0.0201,,,twi,-0.1449,elevasi,-0.127
+banjir,Larompong Selatan,0.5922,0.1403,elevasi,0.1618,jarak_sungai_km,0.0203,curah_hujan,0.0034,ndvi,-0.0612,twi,-0.0073
+banjir,Latimojong,0.2554,-0.1965,ndvi,0.1397,aspect,0.02,jarak_sungai_km,0.0172,twi,-0.158,elevasi,-0.1285
+banjir,Ponrang,0.9279,0.476,ndvi,0.1385,twi,0.106,elevasi,0.0827,,,,
+banjir,Ponrang Selatan,0.9403,0.4884,elevasi,0.1546,ndvi,0.1347,twi,0.1217,jarak_sungai_km,-0.008,,
+banjir,Suli,0.9305,0.4786,elevasi,0.15,twi,0.1169,ndvi,0.1081,,,,
+banjir,Suli Barat,0.1493,-0.3026,ndvi,0.0683,aspect,0.0201,,,twi,-0.1446,elevasi,-0.1256
+banjir,Walenrang,0.077,-0.3749,aspect,0.0199,jarak_sungai_km,0.0135,,,twi,-0.1441,elevasi,-0.116
+banjir,Walenrang Barat,0.0058,-0.4461,jarak_sungai_km,0.019,,,,,twi,-0.1477,elevasi,-0.1279
+banjir,Walenrang Timur,0.9281,0.4762,elevasi,0.1567,twi,0.1204,ndvi,0.1095,jarak_sungai_km,-0.0183,curah_hujan,-0.0114
+banjir,Walenrang Utara,0.0497,-0.4022,aspect,0.0198,jarak_sungai_km,0.0193,,,twi,-0.1502,elevasi,-0.1253
+banjir,Angkona,0.6937,0.2418,elevasi,0.1331,twi,0.109,jarak_sungai_km,0.0226,ndvi,-0.0678,aspect,-0.034
+banjir,Burau,0.02,-0.4319,curah_hujan,0.0116,aspect,0.0027,,,twi,-0.1308,elevasi,-0.1226
+banjir,Danau,0.825,0.3731,ndvi,0.1416,twi,0.1226,aspect,0.0227,elevasi,-0.0651,,
+banjir,Kalaena,0.4324,-0.0195,twi,0.1039,curah_hujan,0.0203,elevasi,0.0147,ndvi,-0.0666,jarak_sungai_km,-0.0379
+banjir,Malili,0.3609,-0.091,twi,0.0634,curah_hujan,0.0285,,,ndvi,-0.0727,aspect,-0.0299
+banjir,Mangkutana,0.0,-0.4519,,,,,,,twi,-0.1363,elevasi,-0.1269
+banjir,Nuha,0.6371,0.1852,twi,0.1112,ndvi,0.0802,aspect,0.0233,elevasi,-0.1248,jarak_sungai_km,-0.0066
+banjir,Tomoni,0.0007,-0.4512,aspect,0.0199,,,,,twi,-0.1392,elevasi,-0.128
+banjir,Tomoni Timur,0.9229,0.471,elevasi,0.1515,twi,0.1207,ndvi,0.0325,,,,
+banjir,Towuti,0.0,-0.4519,,,,,,,elevasi,-0.1197,twi,-0.1178
+banjir,Wasuponda,0.0,-0.4519,jarak_sungai_km,0.0141,,,,,twi,-0.1425,elevasi,-0.1268
+banjir,Wotu,0.95,0.4981,elevasi,0.1449,ndvi,0.1279,twi,0.12,,,,
+banjir,Baebunta,0.8639,0.412,elevasi,0.1504,twi,0.1194,aspect,0.0242,ndvi,-0.0637,,
+banjir,Bone-Bone,0.6985,0.2466,ndvi,0.1424,twi,0.1108,curah_hujan,0.0216,elevasi,-0.0652,aspect,-0.0019
+banjir,Limbong,0.0,-0.4519,,,,,,,twi,-0.1374,elevasi,-0.1276
+banjir,Malangke,0.9344,0.4825,elevasi,0.1485,twi,0.1199,ndvi,0.0598,,,,
+banjir,Malangke Barat,0.9398,0.4879,elevasi,0.1467,twi,0.1183,ndvi,0.0759,,,,
+banjir,Mappedeceng,0.1609,-0.291,twi,0.0973,,,,,elevasi,-0.1295,ndvi,-0.0663
+banjir,Masamba,0.0,-0.4519,,,,,,,twi,-0.1309,elevasi,-0.1248
+banjir,Rampi,0.0,-0.4519,,,,,,,twi,-0.1341,elevasi,-0.1259
+banjir,Sabbang,0.0,-0.4519,,,,,,,twi,-0.1315,elevasi,-0.1244
+banjir,Seko,0.0,-0.4519,,,,,,,twi,-0.1382,elevasi,-0.1266
+banjir,Sukamaju,0.201,-0.2509,twi,0.1091,,,,,elevasi,-0.1196,ndvi,-0.0666

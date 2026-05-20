@@ -1,0 +1,3 @@
+hazard,r2_shap_vs_rf,mae,max_error,n_test,interpretasi
+longsor,1.0,0.0,0.0,46,Excellent — SHAP additivity terpenuhi
+banjir,1.0,0.0,0.0,9,Excellent — SHAP additivity terpenuhi
