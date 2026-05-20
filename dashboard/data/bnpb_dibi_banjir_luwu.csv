@@ -1,0 +1,276 @@
+id,Tanggal / Waktu Kejadian,Minggu,Bulan,Tahun,Kode Provinsi,Provinsi,Kode Kabupaten,Kabupaten,Kode Jenis Kejadian,Nama Kejadian,Jenis Bencana,is_bencana,Jumlah Kejadian,Meninggal,Hilang,Luka / Sakit,menderita_mengungsi,Rumah Rusak Berat,Rumah Rusak Sedang,Rumah Rusak Ringan,Rumah Terendam,Satuan Pendidikan Rusak,Rumah Ibadat Rusak,Fasilitas Pelayanan Kesehatan Rusak,Kantor Rusak,Jembatan Rusak
+4953e43a-c4cc-4704-919f-50add8571b71,2026-05-08 10:00:00.410,19,5,2026,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,30,0,0,0,6,0,0,0,0,0
+9a5e80a0-82e8-422c-a680-8cc1cd76cb6a,2026-05-08 07:25:00.602,19,5,2026,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,475,0,0,0,95,0,0,0,0,0
+f7279dc2-2c5b-483f-80fa-50f0fd13a99d,2026-04-12 01:00:00.842,15,4,2026,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,193,0,0,0,48,0,0,0,0,0
+02bd4a22-fbe9-4ab4-b1be-4e2fb6aac917,2026-04-08 22:30:00.891,15,4,2026,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,930,0,0,0,79,0,0,0,0,0
+c38d8564-ffd1-41ec-a3ea-7d3ee45ab4d1,2026-03-31 22:00:00.540,14,3,2026,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,84,0,0,0,19,0,0,0,0,0
+c3f29b09-b6b4-4130-bb73-15afb5d189a7,2025-11-26 00:00:00.312,48,11,2025,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,65,0,0,0,12,0,0,0,0,0
+46a29a65-1f4c-4d61-8881-1ec529a37359,2025-10-26 01:00:00.179,43,10,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,945,0,0,0,235,0,0,0,0,0
+39c8d279-0d8a-4583-acad-ceb538a04666,2025-09-11 01:00:00.120,37,9,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,125,0,0,0,25,0,0,0,0,0
+3e932877-1d28-4146-87c2-4e00c25d375d,2025-07-26 08:13:07.252,30,7,2025,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,270,0,0,0,54,0,0,0,0,0
+72486530-26bd-4038-bc54-42600180d1c7,2025-07-10 19:00:00.598,28,7,2025,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,200,0,0,0,0,0,0,0,0,0
+f9e62a56-386d-401b-ad14-9ab7efaaaf6c,2025-06-07 18:30:00.075,23,6,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,125,0,0,0,25,0,0,0,0,0
+fa42076c-981b-480b-a6d2-6ffa1743feef,2025-06-01 02:15:00.000,22,6,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,2200,0,0,0,440,0,0,0,0,0
+c913b06c-142f-429b-9c49-a83e2c024cca,2025-05-29 22:00:00.000,22,5,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,6500,0,0,0,1300,0,0,0,0,0
+0ee7031a-c743-4f25-bf66-a5e74eb83db3,2025-05-17 11:14:00.000,20,5,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,2025,0,0,0,405,0,0,0,0,0
+09fa7ffc-ce62-49e9-a630-8acaed3d7c2b,2025-05-12 04:00:00.000,20,5,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1947,0,0,0,379,0,0,0,0,0
+108a515f-5e1f-4fec-a0ed-70706217f84c,2025-05-10 14:36:00.000,19,5,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,4950,0,0,0,990,0,0,0,0,0
+a0b5f11f-1fe6-41c6-aa84-69c4524b6cec,2025-04-22 19:53:00.000,17,4,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,175,0,0,0,35,0,0,0,0,0
+cfbe66aa-4e25-42d9-ba6c-4f4c7f6aae6e,2025-04-13 21:15:00.000,15,4,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,4000,0,0,0,800,0,0,0,0,0
+f97d71ee-1b15-440d-b8a2-bbe71cc247e7,2025-04-11 12:00:00.000,15,4,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,500,0,0,0,100,0,0,0,0,0
+2bda44e9-e0dc-4cb5-b585-9782c71be7bd,2025-04-10 04:15:00.000,15,4,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,3007,0,0,0,600,0,0,0,0,0
+b9b9d1a9-be90-439e-827c-66788930537f,2025-04-04 21:15:00.000,14,4,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,350,0,0,0,70,0,0,0,0,0
+3d77d844-51e6-40bf-b1b1-840cf2f175ae,2025-04-01 02:00:00.000,14,4,2025,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,999,0,0,0,227,0,0,0,0,1
+9159353f-ffbe-4d52-9010-94d3ca8caa22,2025-03-21 19:10:00.000,12,3,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,250,0,0,0,50,0,0,0,0,0
+89256bae-4c95-4745-a906-264fa1d5cad7,2025-03-18 16:55:00.000,12,3,2025,73,Sulawesi Selatan,73.17,Luwu,1013,Banjir dan Tanah Longsor,Banjir,True,1.0,0,0,0,800,0,0,0,160,0,0,0,0,0
+5a10c62e-0d96-4e41-ac4c-c20ccdf33e03,2025-03-14 00:00:00.000,11,3,2025,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,95,0,0,0,19,0,0,0,0,0
+0e4e510e-c552-40d4-9353-c0e09f8b9a2b,2025-03-06 03:00:00.000,10,3,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,952,0,0,0,598,0,0,0,0,0
+dad42985-e68a-442d-9e14-667baac4d5f0,2025-03-04 02:55:00.000,10,3,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,2435,0,0,0,487,0,0,0,0,0
+8f8c3f3b-9b86-4b5e-bcb8-b0b156e0fe7c,2025-02-26 19:00:00.000,9,2,2025,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,100,0,0,0,17,0,0,0,0,0
+4a35a9de-b60a-4056-847d-76b8dcc3c1c7,2025-02-04 16:25:00.000,6,2,2025,73,Sulawesi Selatan,73.17,Luwu,1011,Banjir Rob,Banjir,True,1.0,0,0,0,200,0,0,0,40,0,0,0,0,0
+76f6aabe-139f-4543-8598-d4ed9c6f6a95,2025-02-01 16:00:00.000,5,2,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,3268,0,0,0,874,0,0,0,0,0
+38a8c6e8-acdf-4fe5-aa33-c725e5e39f70,2025-01-29 17:30:00.000,5,1,2025,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,100,0,0,0,20,0,0,0,0,0
+72262087-1841-482c-b7d7-d8f6ee6120bf,2025-01-21 17:30:00.000,4,1,2025,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,50,0,0,0,10,0,0,0,0,0
+b265eed1-f532-4b8e-82d3-efa8f180ae6a,2025-01-20 16:00:00.000,4,1,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,745,0,0,0,386,0,0,0,0,0
+4ebcbae2-381d-4668-bacd-691794806419,2025-01-19 21:00:00.000,3,1,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,298,0,0,0,94,0,0,0,0,0
+04942584-87c6-4e2e-afb3-a243b31e840f,2025-01-15 01:00:00.000,3,1,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,885,0,0,0,177,0,0,0,0,0
+11e97d24-9160-4190-aa82-c9c1d08ca25e,2025-01-05 19:00:00.000,1,1,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,140,0,0,0,50,0,0,0,0,0
+1bf9d139-1710-47f6-ac08-5d37486f94eb,2024-12-13 21:30:00.000,50,12,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,100,0,0,0,20,0,0,0,0,0
+7a0e7861-3b47-4991-bc57-c11d41948efa,2024-12-12 18:30:00.000,50,12,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,50,0,0,0,10,0,0,0,0,0
+acd440a2-19ef-4460-96ff-b36e72f428a3,2024-12-05 00:45:00.000,49,12,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,710,0,0,0,142,0,0,0,0,0
+6c0bb31f-09fa-4f06-97d6-a312fe320f86,2024-11-13 04:00:00.000,46,11,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1525,0,0,0,473,0,0,0,0,0
+c0229f79-da93-402c-975d-048f35933ad9,2024-10-10 22:00:00.000,41,10,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,268,0,0,0,90,0,0,0,0,0
+eb80ffea-d778-4d57-b245-2b04e8004b6d,2024-09-07 04:15:00.000,36,9,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,175,0,0,0,0,0,0,0,0,0
+0485b2ee-0fd3-4441-bb76-66b83165f777,2024-09-06 04:00:00.000,36,9,2024,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,160,0,0,0,40,0,0,0,0,0
+b668385b-cab5-4c43-985c-62f4e8bbf111,2024-08-06 23:00:00.000,32,8,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1875,0,0,0,375,0,0,0,0,0
+430e09cb-b061-43d7-8faf-b6e17b1583a5,2024-07-16 04:30:00.000,29,7,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1735,0,0,0,347,0,0,0,0,0
+e427e742-2368-4a72-8982-052ea87119ea,2024-07-15 19:00:00.000,29,7,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,4632,0,0,0,1289,0,0,0,0,0
+fa019202-9436-43bf-a5b7-abda61dabdbd,2024-07-07 04:30:00.000,27,7,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,3450,0,0,0,690,0,0,0,0,0
+059812a2-9201-4311-8c72-2fd7d15f2c26,2024-07-07 00:00:00.000,27,7,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,20520,0,0,0,2981,0,0,0,0,0
+d3f4cd9c-db1b-4d87-91df-79697a1ee2cf,2024-07-01 04:30:00.000,27,7,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,350,0,0,0,70,0,0,0,0,0
+ec9b6c10-3b99-41a6-8e09-2098b2e1a388,2024-06-04 04:30:00.000,23,6,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,600,0,0,0,0,0,0,0,0,0
+6a6107a9-908b-47b9-8c31-563ab5aef1e6,2024-06-04 03:00:00.000,23,6,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,661,0,0,0,135,0,0,0,0,0
+05d0156e-e3b7-4493-8f63-f718943724dc,2024-06-03 22:30:00.000,23,6,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,175,0,0,0,35,0,0,0,0,0
+e49001e3-caae-44c8-8e70-a32c243d51ad,2024-06-03 09:00:00.000,23,6,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.5,0,0,0,215,0,0,0,38,0,0,0,0,0
+8fb76890-d0de-4279-9531-27173ea9481c,2024-06-03 07:45:00.000,23,6,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.5,0,0,0,470,0,0,0,94,0,0,0,0,0
+4b67c100-4e53-4a25-8ef3-7274ea63bafb,2024-06-02 02:00:00.000,22,6,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1300,0,0,0,209,0,0,0,0,0
+4a2fa8be-2917-4acd-8f90-3e813dbcbd59,2024-05-27 07:00:00.000,22,5,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,9579,0,0,0,2849,0,0,0,0,0
+1f650457-a3c0-4caf-8af8-68e49b491da4,2024-05-26 04:00:00.000,21,5,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,475,0,0,0,95,0,0,0,0,0
+336bf130-ba5d-41fe-923a-1bd044c74f75,2024-05-23 22:30:00.000,21,5,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,7693,0,0,0,2039,0,0,0,0,0
+a84ea1a9-5ba1-490d-b1a5-81e974a8eb95,2024-05-03 00:17:00.000,18,5,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,5,0,61,23548,108,46,118,4308,0,0,0,0,4
+8b06cc63-8cb4-466e-aa5f-aa81784caff4,2024-04-26 00:55:00.000,17,4,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,100,0,0,0,25,0,0,0,0,0
+d52895da-5816-44ce-a045-19259814686f,2024-04-24 21:00:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.3333333333333333,0,0,0,1537,0,0,0,590,0,0,0,0,0
+bd031eb0-2ec5-4fb3-8f1b-65d75fa4677a,2024-04-24 12:00:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.3333333333333333,0,0,0,3576,0,0,0,375,0,0,0,0,0
+0847918a-91f3-492d-913a-dbae57076ea3,2024-04-24 03:00:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.3333333333333333,0,0,0,6054,0,0,0,952,0,0,0,0,0
+07357fff-6f73-4392-b351-199e4f6dced3,2024-04-23 19:30:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.25,0,0,0,150,0,0,0,57,0,0,0,0,0
+f23ecb48-1d28-441e-b44c-69a83deaed66,2024-04-23 18:00:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.25,0,0,0,6043,0,0,0,496,0,0,0,0,0
+ae44213d-15b3-48a1-906b-b1443d90357a,2024-04-23 02:00:00.000,17,4,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,610,0,0,0,122,0,0,0,0,0
+6c94d2bc-5ca3-484f-be35-86c41e11e9b7,2024-04-23 01:00:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.25,0,0,0,644,0,0,0,156,0,0,0,0,0
+768205aa-4f43-417c-86f6-fcae567fc470,2024-04-23 01:00:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.25,0,0,0,500,0,0,0,70,0,0,0,0,0
+5267b3f9-291d-4167-8d1a-582e4f661c51,2024-04-22 23:00:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.25,0,0,0,9141,1,0,0,2460,0,0,0,0,0
+bb1a586d-2e70-43b0-8b6f-50dabd281951,2024-04-22 22:30:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.25,0,0,0,27967,0,0,0,7908,0,0,0,0,6
+988b8eb4-321d-466f-83f0-5021c55b81c4,2024-04-22 22:00:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.25,0,0,0,161,0,0,0,41,0,0,0,0,0
+fe0a3e81-94dc-44d1-81a5-a3b8e9dde210,2024-04-22 20:00:00.000,17,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.25,0,0,0,560,0,0,0,110,0,0,0,0,0
+daa5effb-b838-4ba2-b879-b7f9ad8deb17,2024-04-16 00:00:00.000,16,4,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1020,0,0,0,204,0,0,0,0,0
+99c0ab60-2857-460d-9ff1-75489c86bd89,2024-04-14 02:00:00.000,15,4,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,105,0,0,0,37,0,0,0,0,1
+9b5c6b1c-4965-4d71-b2f3-516c985519d1,2024-04-09 07:00:00.000,15,4,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,100,0,0,0,20,0,0,0,0,0
+38c51c2a-4fc9-4da3-b598-b34bb74e5e68,2024-04-07 14:00:00.000,14,4,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,2500,0,0,0,500,0,0,0,0,0
+88b91d1e-534d-475d-928c-7e09032fe87c,2024-03-30 13:30:00.000,13,3,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1095,0,0,0,205,0,0,0,0,0
+50b79da4-710a-48b8-a878-8812562e80ad,2024-03-29 00:00:00.000,13,3,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1570,0,0,0,314,0,0,0,0,0
+5202fe0e-11c0-40d3-b7ed-f714a78b4dcd,2024-03-25 17:00:00.000,13,3,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,105,0,1,0,234,0,0,0,0,0
+91010623-5040-42c5-966b-5a7485dc008e,2024-03-10 11:00:00.000,10,3,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1116,0,0,0,100,0,0,0,0,0
+1b7143bc-0e82-443f-b926-b864c9659873,2024-03-08 01:00:00.000,10,3,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,3302,0,0,0,593,0,0,0,0,0
+8935f593-f972-44e0-b492-be1a11768539,2024-03-07 00:00:00.000,10,3,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,695,0,0,0,120,0,0,0,0,0
+851f60b0-1be2-40a7-bad4-eefa0fb26bc1,2024-02-18 06:00:00.000,7,2,2024,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,770,0,0,0,267,0,0,0,0,0
+b075f1b2-8a5e-428c-916f-18e0cd268eeb,2024-01-16 04:10:00.000,3,1,2024,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,340,0,0,0,68,0,0,0,0,0
+aab0187b-0efb-4568-933e-e613bf76ed78,2024-01-14 20:00:00.000,2,1,2024,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,605,0,0,0,121,0,0,0,0,0
+338906a6-6589-4412-914f-cb903d4c5a0f,2023-10-19 05:00:00.000,42,10,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,768,0,0,0,256,0,0,0,0,0
+ec330f3f-ea6a-459c-97f2-735a5548b40a,2023-09-06 02:00:00.000,36,9,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,484,0,0,0,125,0,0,0,0,0
+e1d1bc9f-de52-43db-828f-bd1a1b72660c,2023-07-08 09:00:00.000,27,7,2023,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,50,0,0,0,0,0
+e1dfb6b0-685f-46ea-93c5-25c7b78a56eb,2023-05-10 19:00:00.000,19,5,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,287,0,0,0,21,0,0,0,0,0
+49f266ff-585e-4b64-9c5f-531d27e59d9b,2023-05-08 18:00:00.000,19,5,2023,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,1,0,0,0,0,1,1,1980,0,0,0,0,0
+ece51d4e-78ab-46d0-8219-8d3cc18703f7,2023-05-08 16:20:00.000,19,5,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,581,0,0,0,0,0,0,0,0,0
+05beb6dd-1004-40f9-a639-0eab3bc8ae12,2023-05-02 04:30:00.000,18,5,2023,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,15,0,0,0,0,0
+ff02f72f-9a64-4134-be8d-985891b0bf09,2023-04-29 21:00:00.000,17,4,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,245,0,0,0,83,0,0,0,0,0
+0fe247e3-2dea-4f51-94d6-6b8a6e5c1108,2023-04-08 14:45:00.000,14,4,2023,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,1
+802d7693-5722-433c-9e38-c590c73b7ea5,2023-04-07 17:15:00.000,14,4,2023,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,150,0,0,0,0,0
+42149ce4-e08f-4fca-9919-dc248a5124b4,2023-04-02 15:15:00.000,13,4,2023,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,120,0,0,0,0,1
+72aaa045-cdd2-4fbf-a560-5f4b59bb11c2,2023-04-01 06:00:00.000,13,4,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,140,0,0,0,0,0,0,0,0,1
+e6806781-d6d0-4e11-9e48-272b7c334683,2023-03-15 08:00:00.000,11,3,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,235,0,0,0,69,0,0,0,0,1
+1aa1976c-9cec-4fe3-9a4d-30f3cc22a661,2023-03-14 22:00:00.000,11,3,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1240,20,0,0,80,0,0,0,0,0
+fb68ff14-98b7-4100-a98a-9644ad440286,2023-03-13 16:48:00.000,11,3,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1013,Banjir dan Tanah Longsor,Banjir,True,1.0,0,0,0,1512,4,0,0,38,0,0,0,0,0
+1f33ca58-b0e1-4931-89d9-91767aa07c1c,2023-01-27 17:00:00.000,4,1,2023,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,110,0,0,0,0,0
+bc57d816-fe52-4d0a-9e19-03720bc2c6eb,2023-01-27 05:00:00.000,4,1,2023,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,840,0,0,0,140,0,0,0,0,0
+117a2f09-a35e-46a3-a112-a408dccd67ee,2022-12-27 21:00:00.000,52,12,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1150,0,0,0,199,0,0,0,0,0
+654ae5f3-62d0-4c9b-b9c5-5f4e3e552e47,2022-10-18 22:57:00.000,42,10,2022,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,3285,0,0,0,657,0,0,0,0,0
+3049b4ae-be9c-495e-8d0d-15edec39f116,2022-10-09 01:00:00.000,40,10,2022,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,620,0,0,0,124,0,0,0,0,0
+853635df-17aa-40d0-b0a9-c2544d10bad3,2022-10-06 00:00:00.000,40,10,2022,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1465,0,0,0,0,0,0,0,0,0
+621f61a2-430c-445a-b578-1079445959c8,2022-09-24 21:00:00.000,38,9,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,338,0,0,0,116,0,0,0,0,0
+57252d10-fe84-492c-84ca-6495de1acbf1,2022-09-20 19:00:00.000,38,9,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1145,0,0,0,316,0,0,0,0,0
+144084ea-3c82-4b60-9bd0-757fb8211fbe,2022-09-05 03:00:00.000,36,9,2022,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,555,20,0,0,90,0,0,0,0,0
+5f78e30b-e28f-455c-a34b-566100b2db1e,2022-09-01 01:00:00.000,35,9,2022,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,16,0,0,0,4,0,0,0,0,0
+90329cc9-dab1-43d8-b0c0-75ef0775811c,2022-08-31 01:00:00.000,35,8,2022,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,150,0,0,0,30,0,0,0,0,0
+b169e1b9-7c9a-4266-bab3-6c11fb95ab61,2022-08-30 01:00:00.000,35,8,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,10077,0,0,0,2643,0,0,0,0,0
+d0a5e2b6-6b47-47e1-8e42-8a55b52d46ea,2022-08-10 04:00:00.000,32,8,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1397,0,0,0,338,0,0,0,0,0
+4842e4ae-ef3a-4bfb-a1df-01d6fa49932c,2022-07-22 21:00:00.000,29,7,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,30,0,0,0,10,0,0,0,0,0
+6b341226-8241-4ed4-92fa-dc0058e0edf6,2022-07-15 03:00:00.000,28,7,2022,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,18,0,0,0,5,0,0,0,0,0
+eb3e1ec2-16d8-435b-83e0-6c704e490638,2022-07-04 06:00:00.000,27,7,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,380,0,0,0,76,0,0,0,0,0
+5187ca87-b31b-4854-8106-592a1ea43e04,2022-06-19 02:30:00.000,24,6,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,342,0,0,0,103,0,0,0,0,0
+980b3885-9a83-4b30-8246-91e408499dfc,2022-05-10 14:00:00.000,19,5,2022,73,Sulawesi Selatan,73.17,Luwu,1013,Banjir dan Tanah Longsor,Banjir,True,1.0,0,0,0,405,1,0,0,80,0,0,0,0,0
+f4ebe14d-bca1-473c-a7b4-470585acd883,2022-04-02 22:30:00.000,13,4,2022,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,20,1,2,0,0,0,0,0,0,0
+95399443-3478-4e35-93f9-9a06212891b4,2022-03-14 16:30:00.000,11,3,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1013,Banjir dan Tanah Longsor,Banjir,True,1.0,0,0,0,480,0,0,0,96,0,0,0,0,3
+bd637546-ecb2-4495-ad13-cfdb0cb8181d,2022-02-19 06:00:00.000,7,2,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,461,0,0,0,41,0,0,0,0,0
+5f74822d-b15b-4498-9275-04753b099eb0,2022-02-17 02:00:00.000,7,2,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,139,0,0,0,32,0,0,0,0,2
+f18b5982-7364-483b-bd1c-cd8c2bdafccd,2022-02-13 03:30:00.000,6,2,2022,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,316,0,0,0,86,0,0,0,0,0
+5d45ef0c-bd7e-49d0-999d-21f605781642,2022-02-08 02:00:00.000,6,2,2022,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,8,0,0,3,23,0,0,0,0,1
+c7c70096-d1fc-4db9-be10-3176be0546c0,2021-11-28 01:00:00.000,47,11,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1046,0,0,0,317,0,0,0,0,0
+6e53e085-7e55-43e4-b209-563682263fe7,2021-11-26 05:00:00.000,47,11,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,714,0,0,0,198,0,0,0,0,0
+59095e8c-3d81-4a16-81ab-167d5d343b3f,2021-11-16 09:30:00.000,46,11,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1180,0,0,0,331,0,0,0,0,0
+571de0ff-372b-4600-b3c5-15c5c4a9c7ab,2021-11-14 03:00:00.000,45,11,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1383,0,0,0,404,0,0,0,0,0
+9503b5b2-3b9d-4c32-9a5f-7fe5afa0564c,2021-11-05 19:00:00.000,44,11,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,45,0,0,0,9,0,0,0,0,0
+6d5669d2-e1e6-4c55-aa27-0949943d1147,2021-10-30 19:00:00.000,43,10,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1470,15,17,0,176,0,0,0,0,1
+97aa298a-1ea3-4e18-8030-c2a1ab95a0f6,2021-10-03 15:30:00.000,39,10,2021,73,Sulawesi Selatan,73.17,Luwu,1012,Banjir Bandang,Banjir,True,1.0,4,0,20,12169,5,0,0,771,0,0,0,0,0
+2e07553a-2c35-47b4-9f36-fcc42bc64bf1,2021-09-23 00:30:00.000,38,9,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,252,0,0,0,76,0,0,0,0,0
+9a3ebd44-1f21-4d64-8a87-71c2f4006bb3,2021-09-22 20:00:00.000,38,9,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1086,10,10,0,103,0,0,0,0,2
+d7d4609a-3ecc-4ded-b33b-841127d61386,2021-09-20 20:00:00.000,38,9,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,10156,0,0,0,1070,0,0,0,0,0
+6ad87be6-7065-4ee0-ade9-82e393ea217c,2021-09-09 22:00:00.000,36,9,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,982,0,0,0,200,0,0,0,0,0
+cb89a79c-8fbb-422f-bb2f-8f28ae1a98a4,2021-08-30 00:01:00.000,35,8,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,4988,0,0,0,870,0,0,0,0,0
+802874d3-6abe-4f20-8431-8ccc5ca6a940,2021-08-28 22:00:00.000,34,8,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1013,Banjir dan Tanah Longsor,Banjir,True,1.0,0,0,0,4310,0,0,0,671,0,0,0,0,0
+916ad24b-4687-4017-888c-65f4e8ce1cee,2021-08-28 03:00:00.000,34,8,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,450,0,0,0,0,0
+687ef9d3-7f63-4075-bb24-2677f01138d2,2021-08-22 07:00:00.000,33,8,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1876,0,0,0,0,4,7,3,2,4
+366f0c76-06db-4d1e-978d-baae5b492182,2021-08-22 00:01:00.000,33,8,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,230,0,0,0,45,0,0,0,0,0
+b2385080-e92c-41e9-b57b-0471cea47b26,2021-08-06 06:00:00.000,31,8,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,500,0,0,0,100,0,0,0,0,0
+16fb79b1-a56a-4b5c-b521-dc7e050033fa,2021-08-03 19:00:00.000,31,8,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,750,0,0,0,100,0,0,0,0,0
+4a0bcfdb-0c62-4a75-b57f-0b116db62aed,2021-07-17 00:01:00.000,28,7,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,700,1,0,0,140,0,0,0,0,0
+b50b6987-e752-4292-9814-6fe364c73eb7,2021-07-16 00:01:00.000,28,7,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1050,0,0,0,210,0,0,0,0,0
+6c8bc89e-05f2-4315-a47a-cda35be5449d,2021-07-09 23:10:00.000,27,7,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.5,0,0,0,380,0,0,0,0,0,0,0,0,0
+6d2514fb-c093-40a0-ac72-d8f64d449bf3,2021-07-09 05:15:00.000,27,7,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.5,0,0,0,2060,0,0,0,515,0,0,0,0,0
+280f21e3-5564-49c2-851a-4c64acc94449,2021-05-16 00:01:00.000,19,5,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1192,0,0,0,358,1,6,0,0,0
+80dd3847-addf-4666-aabd-ec9e3d8ccc40,2021-05-09 00:01:00.000,18,5,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,41,0,0,0,11,0,0,0,0,0
+bdc43119-a494-4683-ac8c-ae8da8062733,2021-03-26 18:00:00.000,12,3,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1260,0,0,0,1380,0,0,0,0,2
+db8ba6fd-1801-4241-917e-a7fcd0025a01,2021-03-18 00:01:00.000,11,3,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,100,1,0,0,20,1,0,0,0,0
+6ebf1d56-4ca3-4ba1-9cb3-638a8fb5bfd7,2021-02-02 00:01:00.000,5,2,2021,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,37,0,0,0,10,0,0,0,0,0
+14809c88-14d6-45bd-a4fd-0d5bc4cafad9,2021-01-07 15:15:00.000,1,1,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,1710,0,0,0,342,0,0,0,0,0
+1bd59c2d-c2a2-4187-a4a9-b931832c9aa9,2020-09-02 18:00:00.000,36,9,2020,73,Sulawesi Selatan,73.22,Luwu Utara,1013,Banjir dan Tanah Longsor,Banjir,True,1.0,0,0,0,265,3,0,99,870,0,0,0,0,1
+e223aa83-bfff-4215-bd50-9c91ee1d2aaf,2020-08-02 02:15:00.000,31,8,2020,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,708,0,0,0,140,0,0,0,0,0
+c22f6401-5805-4371-ac21-6ac6964ce256,2020-07-21 08:00:00.000,30,7,2020,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,3,0,0,0,0,0
+b913a6c5-9b44-457d-bb06-9ccbe2c12601,2020-07-20 01:30:00.000,30,7,2020,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0e805a5f-0e24-40f0-9591-815724248d2c,2020-07-13 18:00:00.000,29,7,2020,73,Sulawesi Selatan,73.22,Luwu Utara,1013,Banjir dan Tanah Longsor,Banjir,True,1.0,39,9,106,31300,1295,123,2619,4202,10,15,5,10,9
+e17ae04f-31ba-4481-b7f2-bda0d91d8689,2020-07-09 09:00:00.000,28,7,2020,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,14885,0,0,0,2970,16,23,8,14,0
+6f69f1d0-b25f-441e-850f-c376980a54ee,2020-07-06 04:00:00.000,28,7,2020,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,706,7,3,0,0,0
+f165f4f8-bd25-43e8-aede-3fb2e3f9ff7f,2020-06-26 01:00:00.000,26,6,2020,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,2950,0,0,0,590,4,0,0,0,0
+bd4d1d31-3ae5-4fd3-bd41-3fb5ccf0419a,2020-06-18 04:55:00.000,25,6,2020,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,36,0,0,0,9,0,0,0,0,0
+940227ed-573e-47a2-b657-94856eeb9761,2020-06-18 04:00:00.000,25,6,2020,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,533,0,0,0,0,0
+bb81cd5c-8606-42f6-8771-8574b5c230a7,2020-06-17 22:30:00.000,25,6,2020,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,2000,0,0,0,400,0,0,0,0,0
+6aff49da-4aca-40c1-b6a6-42fd917fcd73,2020-06-17 22:30:00.000,25,6,2020,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,19235,0,0,0,3847,0,0,0,0,0
+3c412471-b8e4-49d9-b5ac-b5e4fc24b79f,2020-06-06 03:00:00.000,23,6,2020,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,80,0,0,0,1590,15,2,4,7,0
+214bfed8-b133-4ac2-a7e4-9268b8daa5a8,2020-05-22 01:00:00.000,21,5,2020,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,75,6,0,0,230,2,1,0,0,0
+6416eb81-a62a-423d-b451-8550430766a0,2020-04-21 00:01:00.000,17,4,2020,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,108,0,0,0,52,0,0,0,0,0
+7943bf0b-d521-4110-8242-95b321b9d524,2020-04-07 12:00:00.000,15,4,2020,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,410,0,0,0,95,1,2,0,0,0
+07715cfc-747a-4c31-9895-cee5d6ee935e,2020-04-03 01:00:00.000,14,4,2020,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,15,4,0,0,0,0,0,0,0,0
+9056a08e-4b61-4c7d-ad11-a32bc8f4ca5d,2020-04-01 15:55:00.000,14,4,2020,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.5,0,0,0,2620,0,0,0,0,0,0,0,0,0
+f3b890d0-af06-491e-84fc-7d27fed74f1c,2020-04-01 00:01:00.000,14,4,2020,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,0.5,0,0,0,0,0,0,0,106,0,0,0,0,0
+08fdfb0a-a6a6-476c-b504-834c7e19c237,2019-08-19 06:00:00.000,34,8,2019,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,407,0,0,0,0,0
+d4c5b653-2f76-444e-a8c2-8ebc942ef167,2019-06-18 04:30:00.000,25,6,2019,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,280,0,0,0,60,1,0,0,0,0
+024c83a3-1f75-4653-93d3-5ffe026a4b17,2019-06-17 15:56:00.000,25,6,2019,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,200,0,0,0,60,0,0,0,0,0
+a7a18b08-bec1-4ae7-87de-bf939a0d7cba,2019-06-14 03:00:00.000,24,6,2019,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,12437,0,0,2,0,0,0,0,0,0
+ebae2e08-da4f-4135-b94d-52ec45da0c69,2019-06-11 23:50:00.000,24,6,2019,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,2160,0,0,0,0,15,19,0,7,0
+d03b03c0-b111-43f9-88e5-8397201c6a2b,2019-06-11 17:17:00.000,24,6,2019,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,200,0,0,0,40,0,0,0,0,0
+fa28fc6e-4de2-41f7-bd70-529523280ed8,2019-06-09 05:00:00.000,23,6,2019,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,60,0,0,0,0,0
+7c99b17a-1bab-4417-bcc5-e3d98ad7e08f,2019-06-08 02:00:00.000,23,6,2019,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,6150,0,0,0,890,0,0,0,0,0
+72ce4087-1011-4657-89c8-ef0fac90ded8,2019-06-03 03:50:00.000,23,6,2019,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,700,0,0,0,40,0,0,0,0,1
+fc787f4b-283e-44fa-b471-c59711aa29a1,2019-05-28 03:00:00.000,22,5,2019,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,635,0,0,0,0,0,0,0,0,0
+0d874116-fc44-4a32-8199-e1f8b7f3eff5,2019-04-29 04:30:00.000,18,4,2019,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,10812,0,0,0,190,0,0,0,0,0
+fd4b583e-ac15-45bc-9e96-efb431184163,2019-03-13 16:00:00.000,11,3,2019,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,2,1,0,300,0,0,0,0,0
+42d27198-90c2-487e-a4a3-f9cfb4b7db7d,2019-02-14 03:00:00.000,7,2,2019,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7289d39d-66d7-4a5b-883b-9b6457b735b0,2019-01-14 17:15:00.000,3,1,2019,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,100,0,0,0,0,0
+948510e3-45f4-4ed6-88a6-2b6b94a1dde2,2018-07-26 00:01:00.000,30,7,2018,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,100,0,0,0,0,0
+f7104ba7-1f32-4eaf-bc1c-bbcb0a94eb6d,2018-07-04 00:01:00.000,27,7,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+57b0af0f-65a9-4ed7-9125-237781f92929,2018-06-27 00:01:00.000,26,6,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ca94e279-ca95-4012-b03f-21f15bb01dfe,2018-06-24 00:01:00.000,25,6,2018,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,2,0,0,0,0,0,0,0,0
+8a2e9d70-3b55-4406-9f77-44d6bca89c56,2018-06-22 00:01:00.000,25,6,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3bc5d6a1-0fcb-4186-aae8-e898fd515b5c,2018-06-22 00:01:00.000,25,6,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,5835,0,0,0,1167,0,0,0,0,0
+1f153362-1b78-4ba4-ba83-d51b41c2e019,2018-05-28 00:01:00.000,22,5,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,5585,0,0,0,1117,0,0,0,0,0
+825c8ce3-6957-4e97-9bc0-ce078f0a8cc8,2018-05-15 00:01:00.000,20,5,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+86a184f9-2766-46a3-9bbb-5b09f6f0e677,2018-05-12 00:01:00.000,19,5,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+eff87429-447a-4520-8443-f940a78f8f85,2018-03-14 00:01:00.000,11,3,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,1,1755,0,0,0,119,0,0,0,0,0
+cbfa352f-cc9a-40ac-a4d7-79a8fb9f094d,2018-03-13 00:01:00.000,11,3,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4a4856d9-c963-4fe4-a40e-76d25e32dce8,2018-03-07 00:01:00.000,10,3,2018,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,2
+dca9ce7b-ccd9-4f03-b0fb-46d064445c98,2017-10-16 08:08:08.000,42,10,2017,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,2145,0,0,0,429,0,0,0,0,0
+f4c24c97-5b83-4ef2-8b72-cd486fd88a67,2017-09-14 08:08:08.000,37,9,2017,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,10,0,0,0,0,0
+2c5976b2-51e6-4721-b20d-37f57f0ec0eb,2017-09-11 08:08:08.000,37,9,2017,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,170,0,0,0,34,0,0,0,0,0
+b4d75c3a-d37d-4817-8cbe-0b7c7b48a8f0,2017-08-18 08:08:08.000,33,8,2017,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,20,0,0,0,0,0
+e05aa91d-7bc7-47c6-859c-cd64c673f2f0,2017-07-13 08:08:08.000,28,7,2017,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+701bc4f2-53c7-46f7-adea-4cf7aa210e75,2017-05-29 08:08:08.000,22,5,2017,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,14826,0,0,0,1841,0,0,0,0,0
+601862d4-be33-4b4b-be38-3830948c4e7e,2017-05-22 08:08:08.000,21,5,2017,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,100,0,0,0,0,0
+587fe6e1-78e3-4aa8-9e19-16fa4cb019d7,2017-01-23 08:08:08.000,4,1,2017,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,783,1,2,7,0,0,0,0,0,0
+7208829d-61bf-4708-aa9e-4a8f9643f4e2,2017-01-22 08:08:08.000,3,1,2017,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,200,0,0,0,0,0
+e7fb26d6-ef9d-4502-a146-4da83ae59f9c,2016-11-27 08:08:08.000,47,11,2016,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,242,0,0,0,0,0
+ef67bcac-962c-481d-bfcf-70424ff1d0b0,2016-10-28 08:08:08.000,43,10,2016,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,747,0,0,0,0,0
+920782f1-936c-438f-82b2-6e0c8bfc5c9e,2016-10-25 08:08:08.000,43,10,2016,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,12626,0,0,0,0,0,0,0,0,0
+80e2c1f7-f552-4b3d-99c2-5f4a9acab615,2016-10-23 08:08:08.000,42,10,2016,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,600,0,0,0,0,0
+d54d0067-9d06-4720-b4cf-6412ecc9e9e2,2016-08-01 08:08:08.000,31,8,2016,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,400,0,0,0,0,0
+906eb33c-0406-4f86-b41c-12e7d1c7cb5a,2016-05-26 08:08:08.000,21,5,2016,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,734,0,0,0,0,0
+37226b18-35d1-4394-ba5a-5f675e346dc3,2016-05-23 08:08:08.000,21,5,2016,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,1,15,2,0,0,35,0,0,0,0,0
+c16b44a6-5ba8-4f80-9511-6cbc08f2a14f,2016-04-26 08:08:08.000,17,4,2016,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,85000,0,0,0,0,0,0,0,0,0
+9f613151-4e36-4488-8f9d-340c9a1eb5c4,2016-04-12 08:08:08.000,15,4,2016,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,810,0,0,0,0,0
+4ae81fda-ad9a-4d18-9857-56fcb98a2285,2016-04-01 08:08:08.000,13,4,2016,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,1574,5,9,5,0,0
+63baaba1-3656-4e55-b6d5-b020df8b4d6b,2016-03-02 08:08:08.000,9,3,2016,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,623,0,0,0,0,0
+58cf81d7-2ada-4428-829c-a15498276914,2016-02-29 08:08:08.000,9,2,2016,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,500,0,0,0,623,0,0,0,0,0
+5f26dd54-b1ea-4a42-8606-300f9f7511e1,2016-02-26 08:08:08.000,8,2,2016,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,13093,0,0,0,0,0,0,0,0,0
+a8ebb375-3f7b-4222-8891-56ac4e0a2309,2015-04-13 08:08:08.000,16,4,2015,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,6578,0,0,0,4000,0,0,0,0,0
+bb2db4a7-eb74-4e58-9225-b6d52693d890,2014-06-28 08:08:08.000,26,6,2014,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,260,0,0,0,0,0
+09c31cb8-a6b7-4236-a8bc-3f1975c1097d,2014-06-04 08:08:08.000,23,6,2014,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,7000,0,0,0,0,0
+bebc8cfd-26ad-4c83-bbe5-364feb1a42e0,2014-06-02 08:08:08.000,23,6,2014,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,2,810,0,0,0,0,0
+f5c0a446-81bf-4df8-b655-a7c50f3b96df,2013-12-06 08:08:08.000,49,12,2013,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,1420,0,0,0,0,0
+860dbb81-d758-4df2-83c6-09fbd0a9baa5,2013-07-26 08:08:08.000,30,7,2013,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,1,0,0,30,0,0,0,707,0,0,0,0,0
+607241fc-7e62-4984-9180-17ef29ee7fe9,2013-07-24 08:08:08.000,30,7,2013,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,2,1,2107,0,0,0,0,0
+a7d27b4a-7dc1-4b6d-bec7-e43f6187e7f9,2013-06-14 08:08:08.000,24,6,2013,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,15,0,0,0,0,0
+99d1d330-3b45-40e0-a321-c3df6a38cb0a,2013-06-06 08:08:08.000,23,6,2013,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,11,0,0,33,0,0,0,0,0
+5e5305e8-5ec2-4d1c-b758-03c8290c68bc,2013-04-26 08:08:08.000,17,4,2013,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,1000,0,0,0,0,0
+1a1a482a-8d62-413f-a427-86315483a5d7,2013-01-01 08:08:08.000,1,1,2013,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+aa393cc8-98ea-49f3-92c5-2ec3aa3139c6,2012-10-18 08:08:08.000,42,10,2012,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,1,0,0,2450,0,0,0,250,0,0,0,0,0
+2f57426d-f714-4a91-b502-89e6584ac3b1,2012-07-06 08:08:08.000,27,7,2012,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,1,0,0,6030,168,0,900,0,42,0,0,0,0
+9a76f97f-5712-4573-8d5e-af333d627afb,2012-06-24 08:08:08.000,25,6,2012,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,30,0,0,0,0,0
+c6f0be9c-e73e-4b6e-ba23-69a76c075b00,2012-06-20 08:08:08.000,25,6,2012,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,58,0,0,0,0,0,0,0,0,0
+8c97507d-d1ff-4c81-945d-4cda3eac2388,2012-05-24 08:08:08.000,21,5,2012,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,10000,0,0,0,0,0
+2eab77a6-4103-4572-8d34-7481b5fec4dd,2012-04-01 08:08:08.000,13,4,2012,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+941c908e-38ec-4712-97b9-909d35115049,2012-04-01 08:08:08.000,13,4,2012,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+cb2c5434-b1b7-4bc8-a1c5-d43419a61c29,2012-03-01 08:08:08.000,9,3,2012,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+405b8b57-ab73-4b49-bd28-bc87247330ec,2011-11-30 08:08:08.000,48,11,2011,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,45,10,0,0,0,0,0,0,0,0
+db1064ac-ae8f-4452-994c-ba88416b565c,2011-09-14 08:08:08.000,37,9,2011,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,20,0,0,0,472,0,2,1,0,0
+eb179738-1edd-4c13-ae77-6554a4ca67c3,2011-06-28 08:08:08.000,26,6,2011,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,3,0,0,25,0,0,0,1782,0,0,0,0,0
+b09ae15f-3139-49c8-a1fb-0a86cc7d5015,2011-06-06 08:08:08.000,23,6,2011,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,100,0,0,0,0,0
+b73cb22d-84c3-4115-8dff-4c0413e0ce49,2011-05-01 08:08:08.000,17,5,2011,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+f3549644-8809-4207-941f-c0363f3481f8,2011-04-20 08:08:08.000,16,4,2011,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,10,0,0,1000,0,0,0,0,0
+47eef6ac-36dd-4856-af6b-a01097cda483,2011-04-01 08:08:08.000,13,4,2011,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8aafc50c-b3e1-4441-b2a5-6c37c51dc983,2010-11-01 08:08:08.000,44,11,2010,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bbf1dd84-11a5-428a-ada6-e2d4a134b114,2010-09-19 08:08:08.000,37,9,2010,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,431,16,0,0,0,0,0,0,0,0
+948d9c16-1ee1-4a6e-b379-ef9f195a9763,2010-09-18 08:08:08.000,37,9,2010,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,2565,0,0,0,0,0,0,0,0,0
+2ed73dab-3205-45de-8e5b-ddebc6a73986,2010-09-17 08:08:08.000,37,9,2010,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,1336,0,0,0,0,0,0,0,0,0
+ea7016d0-caab-4307-9358-fa103555bb09,2010-08-20 08:08:08.000,33,8,2010,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,312,0,0,60,0,0,0,0,0,0
+9dbd4587-7024-4545-9250-8b4412e28744,2010-08-14 08:08:08.000,32,8,2010,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,200,0,0,0,0,0
+2fccac70-883a-42fd-ad34-9306d380a4ea,2010-08-01 08:08:08.000,30,8,2010,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ce889e83-9f41-43c9-b17d-258db27c11f8,2010-07-19 08:08:08.000,29,7,2010,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,0.5,0,0,0,1954,184,0,1229,700,0,0,0,0,0
+566b739e-8d77-4ed4-877b-9af214dcc9fe,2010-06-28 08:08:08.000,26,6,2010,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,7394,0,0,0,0,0,0,0,0,0
+5b0e2cc2-5127-4a59-8cfc-573577f441a7,2010-05-01 08:08:08.000,17,5,2010,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61b42b8d-a495-4874-bae0-0e5696d6289f,2010-05-01 08:08:08.000,17,5,2010,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61f80324-8bda-402c-94f2-ab6cb1901397,2010-05-01 08:08:08.000,17,5,2010,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+cb067b4a-2a3b-4e97-b2b6-8cf80c0290f1,2010-04-13 08:08:08.000,15,4,2010,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,359,0,0,0,0
+b213a2b4-844c-4542-bca4-4f1ee6238f83,2010-04-01 08:08:08.000,13,4,2010,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+576fe0be-8065-480d-ab06-dd41047bd8df,2010-03-26 08:08:08.000,12,3,2010,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,324,0,0,0,0,0
+ea552442-063c-4d38-a2e2-726df786663a,2010-03-09 08:08:08.000,10,3,2010,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,2795,0,0,0,559,0,0,0,0,0
+f65c93e9-05f7-4058-8bde-f85bee59c36e,2010-02-01 08:08:08.000,5,2,2010,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,1480,0,0,0,296,0,0,0,0,0
+1fb557bb-b004-455d-be0f-b05fb37da0f2,2010-01-23 08:08:08.000,3,1,2010,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,2317,0,0,0,0,0,0,0,0,0
+f7c551f4-fa9d-4147-963f-10d9a62ae106,2009-03-10 08:08:08.000,11,3,2009,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,140,0,0,0,0,0,0
+2ac5ed00-69d6-41e1-95aa-2caa8c059d2e,2009-03-01 08:08:08.000,9,3,2009,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0cf00b05-4a84-4ec0-b575-5d0f4b950c0d,2009-02-01 08:08:08.000,5,2,2009,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,223,0,0,71,51,0,0,0,0,0
+31e21fe4-fdac-44d0-91a2-87eab9729f97,2009-01-15 08:08:08.000,3,1,2009,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,352,5,0,108,107,0,0,0,0,0
+00fe37be-3ccf-45c0-8c28-3fd9d0a99cc0,2008-10-01 08:08:08.000,40,10,2008,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2d0a9b1a-fa29-4c6e-894b-0baef60bec8e,2008-09-04 08:08:08.000,36,9,2008,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,1,0,0,2400,0,0,0,2375,0,0,0,0,0
+30a002cf-ec17-43ea-8ac0-92e8c5c7353d,2008-08-09 08:08:08.000,32,8,2008,73,Sulawesi Selatan,73.17,Luwu,1010,Banjir,Banjir,True,1.0,1,0,0,0,0,0,0,0,0,0,0,0,0
+072b0eb5-b2d0-469e-ab4c-8414470c5da5,2008-06-01 08:08:08.000,22,6,2008,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+a4463e26-d167-4546-adc3-d187674502b8,2008-06-01 08:08:08.000,22,6,2008,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6d12a1d4-49e5-41e8-8076-118f0fcbb5f6,2008-05-01 08:08:08.000,18,5,2008,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,1,1,0,33659,0,0,0,0,0,0,0,0,0
+85344d3d-67b3-433b-8815-968a8ce9bb50,2008-04-28 08:08:08.000,18,4,2008,73,Sulawesi Selatan,73.24,Luwu Timur,1010,Banjir,Banjir,True,1.0,1,0,0,0,0,0,0,0,0,0,0,0,0
+51ec6275-7279-49b7-b25a-64e88f5456e3,2008-04-18 08:08:08.000,16,4,2008,73,Sulawesi Selatan,73.22,Luwu Utara,1010,Banjir,Banjir,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0

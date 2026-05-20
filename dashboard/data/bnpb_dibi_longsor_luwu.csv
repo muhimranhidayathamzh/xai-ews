@@ -1,0 +1,27 @@
+id,Tanggal / Waktu Kejadian,Minggu,Bulan,Tahun,Kode Provinsi,Provinsi,Kode Kabupaten,Kabupaten,Kode Jenis Kejadian,Nama Kejadian,Jenis Bencana,is_bencana,Jumlah Kejadian,Meninggal,Hilang,Luka / Sakit,menderita_mengungsi,Rumah Rusak Berat,Rumah Rusak Sedang,Rumah Rusak Ringan,Rumah Terendam,Satuan Pendidikan Rusak,Rumah Ibadat Rusak,Fasilitas Pelayanan Kesehatan Rusak,Kantor Rusak,Jembatan Rusak
+dc691fd6-9236-4abe-a0f8-7c99cbe61606,2025-05-17 09:00:00,20,5,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,55,0,0,0,0,0,0,0,0,0
+9e369c46-a723-4af0-82e9-4fbf92c87195,2025-03-07 00:20:00,10,3,2025,73,Sulawesi Selatan,73.22,Luwu Utara,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,620,0,0,0,0,0,0,0,0,0
+21cd90c4-2a27-4e2b-bade-1ae1a3181222,2025-01-25 22:00:00,4,1,2025,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,2,0,4,0,0,0,0,0,0,0,0,0,0
+714b498b-aaa5-40e3-8cbb-1e1ec2f0f273,2024-05-03 00:17:00,18,5,2024,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,9,0,0,0,23,5,15,0,0,0,0,0,0
+3407dcbf-a0f1-48a0-8d85-b62b1c8ba215,2024-04-23 14:30:00,17,4,2024,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,155,8,0,0,0,0,0,0,0,2
+c6c2109c-622d-45ce-aaf4-6975ab294da2,2024-04-21 04:00:00,16,4,2024,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,565,0,0,0,0,0,0,0,0,0
+45bcc26a-8384-4ecc-9667-0735f8767b36,2024-02-26 09:10:00,9,2,2024,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,5,0,8,0,0,0,0,0,0,0,0,0,0
+a80f7b5f-e74a-43e8-a92d-7ce3faa917ea,2023-05-09 05:00:00,19,5,2023,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,6,2,0,0,0,0,0,0,0,0
+da0aa700-bf3f-437a-b3cb-3c94f379df3f,2023-04-17 01:00:00,16,4,2023,73,Sulawesi Selatan,73.24,Luwu Timur,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,15,0,0,0,0,0,0,0,0,0
+65fc30a7-d5e9-4bdc-9834-5a97a49ed41c,2023-04-03 19:30:00,14,4,2023,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,10,2,0,0,0,0,0,0,0,0
+2ed247d8-69c3-43ba-9657-bf512a40c1bf,2023-04-02 19:30:00,13,4,2023,73,Sulawesi Selatan,73.24,Luwu Timur,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,10,2,0,0,0,0,0,0,0,0
+322d8fbc-424f-4bb1-a953-68636e230f27,2023-04-02 15:15:00,13,4,2023,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,0,2,0,6,0,0,0,0,0,0
+58a96356-1cdc-4afa-b2da-3372c7155714,2022-04-27 16:30:00,17,4,2022,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,750,0,0,0,0,0,0,0,0,0
+8ce17530-6f80-4207-a757-9a3627c6660e,2021-11-13 16:00:00,45,11,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,5,0,1,0,0,0,0,0,0,0
+5e2b6e1d-6299-429c-9c6d-7e6140a363c5,2021-05-07 19:00:00,18,5,2021,73,Sulawesi Selatan,73.24,Luwu Timur,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,5,1,0,0,0,0,0,0,0,0
+0daa417c-cb11-4c78-8dff-40bd2652cd89,2021-02-01 00:01:00,5,2,2021,73,Sulawesi Selatan,73.22,Luwu Utara,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,0,1,0,0,0,0,0,0,0,0
+5faff51b-fe44-4f19-b129-819e28dc0c6c,2020-03-30 21:48:00,14,3,2020,73,Sulawesi Selatan,73.24,Luwu Timur,1020,Tanah Longsor,Longsor,True,1.0,2,0,1,2,1,0,1,0,0,0,0,0,0
+458f900a-cb76-4e5b-a92d-d65dcc7de751,2019-06-16 12:00:00,24,6,2019,73,Sulawesi Selatan,73.24,Luwu Timur,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,13,1,4,5,0,0,0,0,0,0
+cb57706c-bed5-4bbe-ad83-e976a9bbc9c1,2018-08-06 00:01:00,32,8,2018,73,Sulawesi Selatan,73.24,Luwu Timur,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,10,1,1,0,0,0,0,0,0,0
+03b903c6-0b0a-46c7-a072-44756433f760,2018-07-01 00:01:00,26,7,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+b198164e-f65f-4067-b524-01f65c1c81e1,2018-06-25 00:01:00,26,6,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8d050db8-05bd-4ab7-8db4-474d042b1658,2018-01-15 00:01:00,3,1,2018,73,Sulawesi Selatan,73.22,Luwu Utara,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,14,0,0,4,0,0,0,0,0,0
+dd00c371-0c00-45a4-b29d-79e028ea2322,2018-01-02 00:01:00,1,1,2018,73,Sulawesi Selatan,73.17,Luwu,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,0,2,0,2,0,0,0,0,0,0
+2931812b-109e-42a4-9ff5-4cc29bc7d31c,2017-10-11 08:08:08,41,10,2017,73,Sulawesi Selatan,73.24,Luwu Timur,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,1304,0,0,0,0,0,0,0,0,0
+2271758a-9d8a-41de-893b-51cab879cb7a,2017-06-06 08:08:08,23,6,2017,73,Sulawesi Selatan,73.24,Luwu Timur,1020,Tanah Longsor,Longsor,True,1.0,0,0,0,15,4,0,1,0,0,0,0,0,0
+93bdd7ba-ee07-4202-80da-c2b45dc5b69d,2017-05-12 08:08:08,19,5,2017,73,Sulawesi Selatan,73.24,Luwu Timur,1020,Tanah Longsor,Longsor,True,1.0,7,0,13,788,15,0,0,0,0,0,0,0,0
