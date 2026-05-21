@@ -284,7 +284,7 @@ if halaman == "🔬 Framework XAI":
                     f'<div style="border-left:4px solid {warna_l};border-radius:4px;' +
                     f'padding:14px;min-height:150px">' +
                     f'<strong>{icon} {header}</strong><br><br>' +
-                    f'<span style="font-size:0.9em">{kal}.</span></div>',
+                    f'<span style="font-size:0.9em">{kal.rstrip(".") + "."}</span></div>',
                     unsafe_allow_html=True,
                 )
     else:
