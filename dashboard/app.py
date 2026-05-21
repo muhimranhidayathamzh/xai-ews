@@ -64,30 +64,37 @@ WARNA_RISK = {"high": "#d73027", "medium": "#fc8d59", "low": "#91cf60"}
 @st.cache_data
 def load_all():
     # Skor dan klasifikasi per kecamatan
-    scores   = pd.read_csv(DATA_DIR / "kecamatan_scores.csv")
+    try:
 
-    # SHAP values per kecamatan
-    shap_ls  = pd.read_csv(DATA_DIR / "kecamatan_shap_longsor.csv")
-    shap_bj  = pd.read_csv(DATA_DIR / "kecamatan_shap_banjir.csv")
+        scores    = pd.read_csv(DATA_DIR / "kecamatan_scores.csv")
 
-    # L2 profiles dan L3 narratives
-    l2       = pd.read_csv(DATA_DIR / "kecamatan_l2_profiles.csv")
-    l3       = pd.read_csv(DATA_DIR / "kecamatan_l3_narratives.csv")
+        shap_ls   = pd.read_csv(DATA_DIR / "kecamatan_shap_longsor.csv")
 
-    # L1 cross-hazard
-    crosshaz = pd.read_csv(RES_DIR / "crosshazard_table.csv")
+        shap_bj   = pd.read_csv(DATA_DIR / "kecamatan_shap_banjir.csv")
 
-    # Halaman 3
-    scorecard  = pd.read_csv(RES_DIR / "nb4_scorecard_comparison.csv")
-    fidelity   = pd.read_csv(RES_DIR / "fidelity_metrics.csv")
-    coherence  = pd.read_csv(RES_DIR / "coherence_table.csv")
+        l2        = pd.read_csv(DATA_DIR / "kecamatan_l2_profiles.csv")
 
-    # GeoJSON kecamatan
-    gdf = gpd.read_file(DATA_DIR / "luwu_raya.geojson")
+        l3        = pd.read_csv(DATA_DIR / "kecamatan_l3_narratives.csv")
 
-    # DIBI historical events
-    dibi_ls = pd.read_csv(DATA_DIR / "bnpb_dibi_longsor_luwu.csv")
-    dibi_bj = pd.read_csv(DATA_DIR / "bnpb_dibi_banjir_luwu.csv")
+        crosshaz  = pd.read_csv(RES_DIR  / "crosshazard_table.csv")
+
+        scorecard = pd.read_csv(RES_DIR  / "nb4_scorecard_comparison.csv")
+
+        fidelity  = pd.read_csv(RES_DIR  / "fidelity_metrics.csv")
+
+        coherence = pd.read_csv(RES_DIR  / "coherence_table.csv")
+
+        gdf       = gpd.read_file(DATA_DIR / "luwu_raya.geojson")
+
+        dibi_ls_raw = pd.read_csv(DATA_DIR / "bnpb_dibi_longsor_luwu.csv")
+
+        dibi_bj_raw = pd.read_csv(DATA_DIR / "bnpb_dibi_banjir_luwu.csv")
+
+    except Exception as e:
+
+        st.error(f"❌ Error loading data: {e}")
+
+        st.stop()
 
     # Aggregate DIBI per kabupaten
     dibi_ls_agg = (dibi_ls.groupby("Kabupaten")["Jumlah Kejadian"]
@@ -126,6 +133,7 @@ def load_all():
     )
 
 data = load_all()
+st.sidebar.success('✅ Data loaded')
 
 # ── Navigasi sidebar ─────────────────────────────────────────
 st.sidebar.image(
