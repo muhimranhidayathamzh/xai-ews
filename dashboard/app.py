@@ -272,7 +272,8 @@ if halaman == "🔬 Framework XAI":
 
     if not l3_row.empty:
         narasi  = l3_row.iloc[0]["narasi"]
-        kalimat = [k.strip() for k in narasi.split(".") if len(k.strip()) > 10]
+        import re
+        kalimat = [k.strip() for k in re.split(r'\. (?=[A-Z])', narasi) if len(k.strip()) > 10]
         icons   = ["⚠️","🔍","✅"]
         headers = ["Status Risiko","Faktor & Kondisi","Rekomendasi DRR"]
         warna_l = WARNA_RISK.get(risk,"#999")
