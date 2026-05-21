@@ -115,7 +115,6 @@ st.sidebar.caption(
     "**Wilayah:** 44 Kecamatan Luwu Raya\n"
     "**Framework:** Three-Level XAI"
 )
-st.sidebar.success("✅ Data loaded")
 
 # ── HALAMAN 1 ────────────────────────────────────────────────
 if halaman == "🔬 Framework XAI":
@@ -281,8 +280,8 @@ if halaman == "🔬 Framework XAI":
         for col_l3, icon, header, kal in zip(cols_l3, icons, headers, kalimat[:3]):
             with col_l3:
                 st.markdown(
-                    f'<div style="background:#f8f9fa;border-radius:8px;padding:14px;' +
-                    f'border-left:4px solid {warna_l};min-height:150px">' +
+                    f'<div style="border-left:4px solid {warna_l};border-radius:4px;' +
+                    f'padding:14px;min-height:150px">' +
                     f'<strong>{icon} {header}</strong><br><br>' +
                     f'<span style="font-size:0.9em">{kal}.</span></div>',
                     unsafe_allow_html=True,
