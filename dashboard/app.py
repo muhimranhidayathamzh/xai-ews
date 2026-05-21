@@ -97,10 +97,10 @@ def load_all():
         st.stop()
 
     # Aggregate DIBI per kabupaten
-    dibi_ls_agg = (dibi_ls.groupby("Kabupaten")["Jumlah Kejadian"]
+    dibi_ls_agg = (dibi_ls_raw.groupby("Kabupaten")["Jumlah Kejadian"]
                    .sum().reset_index()
                    .rename(columns={"Jumlah Kejadian": "n_kejadian"}))
-    dibi_bj_agg = (dibi_bj.groupby("Kabupaten")["Jumlah Kejadian"]
+    dibi_bj_agg = (dibi_bj_raw.groupby("Kabupaten")["Jumlah Kejadian"]
                    .sum().reset_index()
                    .rename(columns={"Jumlah Kejadian": "n_kejadian"}))
 
