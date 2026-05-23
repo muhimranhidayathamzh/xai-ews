@@ -1,0 +1,4 @@
+hazard,metric,value,p_value,n,note
+Longsor,Spearman ρ,0.2988,0.0488,44,Model saturated (MAUP); rank correlation preferred
+Banjir,Cohen's κ (unweighted),0.6589,,44,"Tertile thresholds: model T33=0.1117, T67=0.8510"
+Banjir,Cohen's κ (linear weighted),0.6912,,44,Interpretation: Substantial (Landis & Koch 1977)
