@@ -154,16 +154,18 @@ if halaman == "🔬 Framework XAI":
 
     st.markdown(f"#### {kec_pilihan} · Kab. {kab}")
 
+    show_l2_l3 = not no_data
+
     if no_data:
-        st.warning(
-            "Tidak ada titik longsor teridentifikasi di kecamatan ini. "
-            "Probabilitas di-impute sebagai 0 — analisis L2 dan L3 tidak tersedia."
+        st.info(
+            "ℹ️ Tidak ada titik longsor teridentifikasi di kecamatan ini. "
+            "Probabilitas di-impute sebagai 0. Analisis Level 2 dan Level 3 tidak tersedia — "
+            "Level 1 (analisis global) tetap ditampilkan di bawah."
         )
-        st.stop()
 
     st.divider()
 
-    # L1 Global
+    # L1 Global — selalu ditampilkan
     st.subheader("🌐 Level 1 — Analisis Global")
     st.caption("Kepentingan setiap faktor lingkungan secara keseluruhan — perbandingan longsor vs banjir.")
 
@@ -182,113 +184,133 @@ if halaman == "🔬 Framework XAI":
             orientation="h", marker_color="#2980b9", opacity=0.85,
         ))
         fig_l1.update_layout(
-            barmode="group", title="Kepentingan Fitur Ternormalisasi (0-1)",
-            xaxis_title="Nilai SHAP Ternormalisasi", height=320,
-            margin=dict(l=10,r=10,t=40,b=10),
-            legend=dict(orientation="h", yanchor="bottom", y=1.02),
+            barmode="group",
+            title=dict(text="Kepentingan Fitur Ternormalisasi (0–1)", font=dict(size=14)),
+            xaxis_title="Nilai SHAP Ternormalisasi", height=350,
+            margin=dict(l=10,r=10,t=70,b=10),
+            legend=dict(orientation="h", yanchor="bottom", y=1.08, xanchor="center", x=0.5),
         )
         st.plotly_chart(fig_l1, use_container_width=True)
     with col_l1b:
         st.markdown("**Ranking Lintas Hazard**")
         df_rank = df_cross[["label","rank_longsor","rank_banjir","kategori"]].copy()
-        df_rank.columns = ["Fitur","Rank Longsor","Rank Banjir","Kategori"]
-        st.dataframe(df_rank.sort_values("Rank Longsor"),
-                     use_container_width=True, hide_index=True, height=280)
-        st.caption("consistent = penting di kedua hazard")
+        df_rank.columns = ["Fitur","Longsor","Banjir","Tipe"]
+        # Replace None/NaN with dash
+        df_rank["Longsor"] = df_rank["Longsor"].apply(lambda x: f"{int(x)}" if pd.notna(x) else "—")
+        df_rank["Banjir"]  = df_rank["Banjir"].apply(lambda x: f"{int(x)}" if pd.notna(x) else "—")
+        # Translate kategori
+        tipe_map = {"consistent":"Kedua hazard","longsor-specific":"Longsor saja","banjir-specific":"Banjir saja"}
+        df_rank["Tipe"] = df_rank["Tipe"].map(tipe_map).fillna(df_rank["Tipe"])
+        st.dataframe(df_rank.sort_values("Longsor"),
+                     use_container_width=True, hide_index=True, height=300)
+        st.caption("Rank = urutan kepentingan fitur per hazard")
     st.divider()
 
-    # L2 Lokal
-    st.subheader("🎯 Level 2 — Analisis Lokal")
-    st.caption("Kontribusi spesifik setiap faktor untuk kecamatan terpilih.")
+    # L2 Lokal — hanya jika data tersedia
+    if show_l2_l3:
+        st.subheader("🎯 Level 2 — Analisis Lokal")
+        st.caption("Kontribusi spesifik setiap faktor untuk kecamatan terpilih. Merah = meningkatkan risiko · Hijau = menurunkan risiko.")
 
-    shap_row = shap_df[shap_df["NAME_3"] == kec_pilihan]
-    l2_row   = data["l2"][
-        (data["l2"]["NAME_3"] == kec_pilihan) & (data["l2"]["hazard"] == hazard_key)]
+        shap_row = shap_df[shap_df["NAME_3"] == kec_pilihan]
+        l2_row   = data["l2"][
+            (data["l2"]["NAME_3"] == kec_pilihan) & (data["l2"]["hazard"] == hazard_key)]
 
-    col_wf, col_card = st.columns([3,2])
-    with col_wf:
-        if shap_row.empty:
-            st.info("Data SHAP tidak tersedia untuk kecamatan ini.")
-        else:
-            sr        = shap_row.iloc[0]
-            shap_dict = {f: float(sr[f"shap_{f}"]) for f in fitur_list}
-            val_dict  = {f: float(sr[f"val_{f}"])  for f in fitur_list}
-            sorted_items = sorted(shap_dict.items(), key=lambda x: abs(x[1]))
-            y_labels = [f"{LABEL_FITUR.get(f,f)} ({fmt_val(f,val_dict[f])})"
-                        for f,_ in sorted_items]
-            y_full   = ["Baseline (rata-rata model)"] + y_labels + ["Prediksi Akhir"]
-            x_vals   = [base_ev] + [v for _,v in sorted_items] + [0]
-            measures = ["absolute"] + ["relative"]*len(sorted_items) + ["total"]
-            fig_wf = go.Figure(go.Waterfall(
-                orientation="h", measure=measures, y=y_full, x=x_vals,
-                connector={"line":{"color":"#cccccc","width":0.5,"dash":"dot"}},
-                increasing={"marker":{"color":"#d73027"}},
-                decreasing={"marker":{"color":"#91cf60"}},
-                totals={"marker":{"color":"#4575b4"}},
-                textposition="outside",
-                text=[f"{v:+.3f}" if 0<i<len(x_vals)-1 else f"{v:.3f}"
-                      for i,v in enumerate(x_vals)],
-            ))
-            fig_wf.update_layout(
-                title="SHAP Waterfall — Kontribusi Per Fitur",
-                xaxis_title="Probabilitas", xaxis=dict(range=[0,1.15]),
-                height=360, margin=dict(l=10,r=40,t=40,b=10),
+        # Caveat n_titik
+        n_titik = int(row.get("n_titik", 0)) if hazard_key == "longsor" else 0
+        if hazard_key == "longsor" and 0 < n_titik <= 2:
+            st.warning(
+                f"⚠️ Estimasi untuk kecamatan ini berdasarkan hanya **{n_titik} titik observasi** "
+                f"— interpretasikan dengan hati-hati. Kecamatan dengan lebih banyak titik "
+                f"memberikan estimasi yang lebih reliable."
             )
-            st.plotly_chart(fig_wf, use_container_width=True)
 
-    with col_card:
-        st.markdown("**Profil Risiko Kecamatan**")
-        if not l2_row.empty:
-            lr       = l2_row.iloc[0]
-            mean_reg = data["scores"][f"prob_{hazard_key}"].mean()
-            delta    = (prob - mean_reg) * 100
-            st.metric("Probabilitas", f"{prob*100:.1f}%",
-                      delta=f"{delta:+.1f}% vs rata-rata ({mean_reg*100:.1f}%)",
-                      delta_color="inverse")
-            st.markdown("**Faktor Pendorong:**")
-            for i, c in enumerate(["pendorong_1","pendorong_2","pendorong_3"], 1):
-                f = lr.get(c)
-                if pd.notna(f) and not shap_row.empty:
-                    sv = float(shap_row.iloc[0].get(f"shap_{f}", 0))
-                    vv = float(shap_row.iloc[0].get(f"val_{f}", 0))
-                    st.markdown(f"{i}. **{LABEL_FITUR.get(f,f)}** — {fmt_val(f,vv)} *(SHAP: +{sv:.3f})*")
-            st.markdown("**Faktor Pelindung:**")
-            for i, c in enumerate(["pelindung_1","pelindung_2"], 1):
-                f = lr.get(c)
-                if pd.notna(f) and not shap_row.empty:
-                    sv = float(shap_row.iloc[0].get(f"shap_{f}", 0))
-                    vv = float(shap_row.iloc[0].get(f"val_{f}", 0))
-                    st.markdown(f"{i}. **{LABEL_FITUR.get(f,f)}** — {fmt_val(f,vv)} *(SHAP: {sv:.3f})*")
-        else:
-            st.info("Profil L2 tidak tersedia.")
-    st.divider()
-
-    # L3 Narasi
-    st.subheader("📝 Level 3 — Narasi & Rekomendasi")
-    st.caption("Penjelasan dalam Bahasa Indonesia untuk non-technical stakeholders.")
-
-    l3_row = data["l3"][
-        (data["l3"]["NAME_3"] == kec_pilihan) & (data["l3"]["hazard"] == hazard_key)]
-
-    if not l3_row.empty:
-        narasi  = l3_row.iloc[0]["narasi"]
-        import re
-        kalimat = [k.strip() for k in re.split(r'\. (?=[A-Z])', narasi) if len(k.strip()) > 10]
-        icons   = ["⚠️","🔍","✅"]
-        headers = ["Status Risiko","Faktor & Kondisi","Rekomendasi DRR"]
-        warna_l = WARNA_RISK.get(risk,"#999")
-        cols_l3 = st.columns(3)
-        for col_l3, icon, header, kal in zip(cols_l3, icons, headers, kalimat[:3]):
-            with col_l3:
-                st.markdown(
-                    f'<div style="border-left:4px solid {warna_l};border-radius:4px;' +
-                    f'padding:14px;min-height:150px">' +
-                    f'<strong>{icon} {header}</strong><br><br>' +
-                    f'<span style="font-size:0.9em">{kal.rstrip(".") + "."}</span></div>',
-                    unsafe_allow_html=True,
+        col_wf, col_card = st.columns([3,2])
+        with col_wf:
+            if shap_row.empty:
+                st.info("Data SHAP tidak tersedia untuk kecamatan ini.")
+            else:
+                sr        = shap_row.iloc[0]
+                shap_dict = {f: float(sr[f"shap_{f}"]) for f in fitur_list}
+                val_dict  = {f: float(sr[f"val_{f}"])  for f in fitur_list}
+                sorted_items = sorted(shap_dict.items(), key=lambda x: abs(x[1]))
+                y_labels = [f"{LABEL_FITUR.get(f,f)} ({fmt_val(f,val_dict[f])})"
+                            for f,_ in sorted_items]
+                y_full   = ["Baseline (rata-rata model)"] + y_labels + ["Prediksi Akhir"]
+                x_vals   = [base_ev] + [v for _,v in sorted_items] + [0]
+                measures = ["absolute"] + ["relative"]*len(sorted_items) + ["total"]
+                fig_wf = go.Figure(go.Waterfall(
+                    orientation="h", measure=measures, y=y_full, x=x_vals,
+                    connector={"line":{"color":"#cccccc","width":0.5,"dash":"dot"}},
+                    increasing={"marker":{"color":"#d73027"}},
+                    decreasing={"marker":{"color":"#91cf60"}},
+                    totals={"marker":{"color":"#4575b4"}},
+                    textposition="outside",
+                    text=[f"{v:+.3f}" if 0<i<len(x_vals)-1 else f"{v:.3f}"
+                          for i,v in enumerate(x_vals)],
+                ))
+                fig_wf.update_layout(
+                    title="SHAP Waterfall — Kontribusi Per Fitur",
+                    xaxis_title="Probabilitas", xaxis=dict(range=[0,1.15]),
+                    height=360, margin=dict(l=10,r=40,t=40,b=10),
                 )
+                st.plotly_chart(fig_wf, use_container_width=True)
+
+        with col_card:
+            st.markdown("**Profil Risiko Kecamatan**")
+            if not l2_row.empty:
+                lr       = l2_row.iloc[0]
+                mean_reg = data["scores"][f"prob_{hazard_key}"].mean()
+                delta    = (prob - mean_reg) * 100
+                st.metric("Probabilitas", f"{prob*100:.1f}%",
+                          delta=f"{delta:+.1f}% vs rata-rata ({mean_reg*100:.1f}%)",
+                          delta_color="inverse")
+                st.markdown("**🔺 Faktor Pendorong:**")
+                for i, c in enumerate(["pendorong_1","pendorong_2","pendorong_3"], 1):
+                    f = lr.get(c)
+                    if pd.notna(f) and not shap_row.empty:
+                        sv = float(shap_row.iloc[0].get(f"shap_{f}", 0))
+                        vv = float(shap_row.iloc[0].get(f"val_{f}", 0))
+                        st.markdown(f"{i}. **{LABEL_FITUR.get(f,f)}** — {fmt_val(f,vv)} *(SHAP: +{sv:.3f})*")
+                st.markdown("**🛡️ Faktor Pelindung:**")
+                for i, c in enumerate(["pelindung_1","pelindung_2"], 1):
+                    f = lr.get(c)
+                    if pd.notna(f) and not shap_row.empty:
+                        sv = float(shap_row.iloc[0].get(f"shap_{f}", 0))
+                        vv = float(shap_row.iloc[0].get(f"val_{f}", 0))
+                        st.markdown(f"{i}. **{LABEL_FITUR.get(f,f)}** — {fmt_val(f,vv)} *(SHAP: {sv:.3f})*")
+            else:
+                st.info("Profil L2 tidak tersedia.")
+        st.divider()
+
+        # L3 Narasi
+        st.subheader("📝 Level 3 — Narasi & Rekomendasi")
+        st.caption("Penjelasan dalam Bahasa Indonesia untuk non-technical stakeholders.")
+
+        l3_row = data["l3"][
+            (data["l3"]["NAME_3"] == kec_pilihan) & (data["l3"]["hazard"] == hazard_key)]
+
+        if not l3_row.empty:
+            narasi  = l3_row.iloc[0]["narasi"]
+            import re
+            kalimat = [k.strip() for k in re.split(r'\. (?=[A-Z])', narasi) if len(k.strip()) > 10]
+            icons   = ["⚠️","🔍","✅"]
+            headers = ["Status Risiko","Faktor & Kondisi","Rekomendasi DRR"]
+            warna_l = WARNA_RISK.get(risk,"#999")
+            cols_l3 = st.columns(3)
+            for col_l3, icon, header, kal in zip(cols_l3, icons, headers, kalimat[:3]):
+                with col_l3:
+                    st.markdown(
+                        f'<div style="border-left:4px solid {warna_l};border-radius:4px;' +
+                        f'padding:14px;min-height:150px">' +
+                        f'<strong>{icon} {header}</strong><br><br>' +
+                        f'<span style="font-size:0.9em">{kal.rstrip(".") + "."}</span></div>',
+                        unsafe_allow_html=True,
+                    )
+        else:
+            st.info("Narasi L3 tidak tersedia.")
     else:
-        st.info("Narasi L3 tidak tersedia.")
+        st.info("Level 2 dan Level 3 tidak tersedia untuk kecamatan ini karena tidak ada titik longsor teridentifikasi. Level 1 (analisis global) ditampilkan di atas.")
+
     st.divider()
 
     # Framework Validation Panel
@@ -423,10 +445,45 @@ elif halaman == "📊 Teknis & Export":
 
     st.subheader("📥 Download Data")
     col_d1, col_d2 = st.columns(2)
+
+    # Prepare clean prediksi CSV
+    def prepare_prediksi_csv():
+        df = data["scores"].copy()
+        df["prob_longsor"] = df["prob_longsor"].round(4)
+        df["prob_banjir"]  = df["prob_banjir"].round(4)
+        risk_map = {"low":"Rendah","medium":"Sedang","high":"Tinggi"}
+        df["risk_longsor"] = df["risk_longsor"].map(risk_map)
+        df["risk_banjir"]  = df["risk_banjir"].map(risk_map)
+        df["no_data_longsor"] = df["no_data_longsor"].map({True:"Ya",False:"Tidak"})
+        df = df.rename(columns={
+            "NAME_2":"Kabupaten","NAME_3":"Kecamatan",
+            "prob_banjir":"Probabilitas Banjir","risk_banjir":"Kelas Risiko Banjir",
+            "prob_longsor":"Probabilitas Longsor","risk_longsor":"Kelas Risiko Longsor",
+            "n_titik":"Jumlah Titik Longsor","no_data_longsor":"Tidak Ada Data Longsor",
+        })
+        col_order = ["Kabupaten","Kecamatan",
+                     "Probabilitas Longsor","Kelas Risiko Longsor",
+                     "Probabilitas Banjir","Kelas Risiko Banjir",
+                     "Jumlah Titik Longsor","Tidak Ada Data Longsor"]
+        return df[[c for c in col_order if c in df.columns]]
+
+    # Prepare clean narasi CSV
+    def prepare_narasi_csv():
+        df = data["l3"].copy()
+        df["prob"] = df["prob"].round(4)
+        risk_map = {"low":"Rendah","medium":"Sedang","high":"Tinggi"}
+        df["risk"] = df["risk"].map(risk_map).fillna(df["risk"])
+        df["hazard"] = df["hazard"].str.title()
+        df = df.rename(columns={
+            "hazard":"Hazard","NAME_3":"Kecamatan",
+            "prob":"Probabilitas","risk":"Kelas Risiko","narasi":"Narasi L3",
+        })
+        return df[["Kecamatan","Hazard","Probabilitas","Kelas Risiko","Narasi L3"]]
+
     with col_d1:
         st.download_button(
             "📥 Prediksi Semua Kecamatan (CSV)",
-            data=data["scores"].to_csv(index=False).encode("utf-8"),
+            data=prepare_prediksi_csv().to_csv(index=False, sep=";").encode("utf-8"),
             file_name="xai_ews_v3_prediksi_kecamatan.csv",
             mime="text/csv", use_container_width=True,
         )
@@ -434,8 +491,45 @@ elif halaman == "📊 Teknis & Export":
     with col_d2:
         st.download_button(
             "📥 Narasi Level 3 (CSV)",
-            data=data["l3"].to_csv(index=False).encode("utf-8"),
+            data=prepare_narasi_csv().to_csv(index=False, sep=";").encode("utf-8"),
             file_name="xai_ews_v3_narasi_l3.csv",
             mime="text/csv", use_container_width=True,
         )
         st.caption("Narasi 3 kalimat Bahasa Indonesia per kecamatan per hazard.")
+
+    st.divider()
+
+    # ── External Validation ──────────────────────────────────
+    st.subheader("🌍 External Validation")
+    st.caption(
+        "Perbandingan prediksi model dengan data referensi pemerintah. "
+        "PVMBG ZKGT untuk longsor, InaRISK BNPB untuk banjir."
+    )
+
+    ev_col1, ev_col2 = st.columns(2)
+    with ev_col1:
+        st.markdown(
+            '<div style="border-left:4px solid #c0392b;border-radius:4px;padding:14px">'
+            '<strong>🏔️ Longsor</strong><br>'
+            '<span style="font-size:0.85em;opacity:0.7">Referensi: PVMBG ZKGT (BIG SatuPeta)</span><br><br>'
+            '<span style="font-size:1.8em;font-weight:600">ρ = 0.299</span><br>'
+            '<span style="font-size:0.85em">Spearman rank correlation · p = 0.049</span><br><br>'
+            '<span style="font-size:0.85em">'
+            'Korelasi lemah namun signifikan. Model point-trained kehilangan '
+            'daya diskriminatif di level kecamatan (MAUP effect).'
+            '</span></div>',
+            unsafe_allow_html=True,
+        )
+    with ev_col2:
+        st.markdown(
+            '<div style="border-left:4px solid #2980b9;border-radius:4px;padding:14px">'
+            '<strong>🌊 Banjir</strong><br>'
+            '<span style="font-size:0.85em;opacity:0.7">Referensi: InaRISK BNPB</span><br><br>'
+            '<span style="font-size:1.8em;font-weight:600">κ = 0.691</span><br>'
+            '<span style="font-size:0.85em">Cohen\'s Kappa (linear weighted) · 77.3% agreement</span><br><br>'
+            '<span style="font-size:0.85em">'
+            'Substantial agreement (Landis & Koch 1977). Semua misklasifikasi '
+            'hanya geser satu kelas — tidak ada lompatan dua kelas.'
+            '</span></div>',
+            unsafe_allow_html=True,
+        )
