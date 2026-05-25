@@ -144,22 +144,35 @@ if halaman == "🔬 Framework XAI":
     no_data = bool(row.get("no_data_longsor", False)) if hazard_key == "longsor" else False
 
     with col_metric:
-        st.metric(f"Probabilitas {hazard_pilihan}", f"{prob*100:.1f}%")
         st.markdown(
-            f'<span style="background:{WARNA_RISK.get(risk,"#999")};color:white;' +
-            f'padding:3px 12px;border-radius:12px;font-size:0.85em;font-weight:600">' +
+            f'<span style="background:{WARNA_RISK.get(risk,"#999")};color:white;'
+            f'padding:5px 14px;border-radius:12px;font-size:1.05em;font-weight:600">'
             f'{LABEL_RISK.get(risk,"—")}</span>',
             unsafe_allow_html=True,
         )
+        st.metric(
+            f"Indeks Kerentanan",
+            f"{prob*100:.1f}%",
+            help=(
+                "Indeks 0–100% menunjukkan seberapa mirip kondisi terrain "
+                "kecamatan ini dengan lokasi bencana historis. "
+                "BUKAN prediksi bahwa bencana pasti terjadi. "
+                "Gunakan bersama informasi BPBD setempat."
+            ),
+        )
 
     st.markdown(f"#### {kec_pilihan} · Kab. {kab}")
+    st.caption(
+        f"ℹ️ Indeks kerentanan menggambarkan kemiripan kondisi terrain dengan "
+        f"lokasi {hazard_pilihan.lower()} historis, bukan prediksi kejadian bencana."
+    )
 
     show_l2_l3 = not no_data
 
     if no_data:
         st.info(
             "ℹ️ Tidak ada titik longsor teridentifikasi di kecamatan ini. "
-            "Probabilitas di-impute sebagai 0. Analisis Level 2 dan Level 3 tidak tersedia — "
+            "Indeks kerentanan di-impute sebagai 0. Analisis Level 2 dan Level 3 tidak tersedia — "
             "Level 1 (analisis global) tetap ditampilkan di bawah."
         )
 
@@ -250,7 +263,7 @@ if halaman == "🔬 Framework XAI":
                 ))
                 fig_wf.update_layout(
                     title="SHAP Waterfall — Kontribusi Per Fitur",
-                    xaxis_title="Probabilitas", xaxis=dict(range=[0,1.15]),
+                    xaxis_title="Indeks Kerentanan", xaxis=dict(range=[0,1.15]),
                     height=360, margin=dict(l=10,r=40,t=40,b=10),
                 )
                 st.plotly_chart(fig_wf, use_container_width=True)
@@ -261,9 +274,15 @@ if halaman == "🔬 Framework XAI":
                 lr       = l2_row.iloc[0]
                 mean_reg = data["scores"][f"prob_{hazard_key}"].mean()
                 delta    = (prob - mean_reg) * 100
-                st.metric("Probabilitas", f"{prob*100:.1f}%",
+                st.metric("Indeks Kerentanan", f"{prob*100:.1f}%",
                           delta=f"{delta:+.1f}% vs rata-rata ({mean_reg*100:.1f}%)",
-                          delta_color="inverse")
+                          delta_color="inverse",
+                          help="Perbandingan terhadap rata-rata seluruh kecamatan di Luwu Raya.")
+                # Tier 5: Peringkat regional
+                all_probs = data["scores"][f"prob_{hazard_key}"].sort_values(ascending=False)
+                rank = int((all_probs >= prob).sum())
+                total = len(all_probs)
+                st.caption(f"📊 Peringkat: **{rank} dari {total}** kecamatan (1 = paling rentan)")
                 st.markdown("**🔺 Faktor Pendorong:**")
                 for i, c in enumerate(["pendorong_1","pendorong_2","pendorong_3"], 1):
                     f = lr.get(c)
@@ -291,6 +310,8 @@ if halaman == "🔬 Framework XAI":
 
         if not l3_row.empty:
             narasi  = l3_row.iloc[0]["narasi"]
+            # Runtime terminology fix: probabilitas → indeks kerentanan
+            narasi = narasi.replace("probabilitas", "indeks kerentanan")
             import re
             kalimat = [k.strip() for k in re.split(r'\. (?=[A-Z])', narasi) if len(k.strip()) > 10]
             icons   = ["⚠️","🔍","✅"]
@@ -333,7 +354,7 @@ if halaman == "🔬 Framework XAI":
 # ── HALAMAN 2 ────────────────────────────────────────────────
 elif halaman == "🗺️ Peta Regional":
     st.title("🗺️ Peta Kerentanan Regional")
-    st.caption("Distribusi spasial probabilitas kerentanan — 44 Kecamatan Luwu Raya")
+    st.caption("Distribusi spasial indeks kerentanan — 44 Kecamatan Luwu Raya")
     st.divider()
 
     col_p1, col_p2 = st.columns([1,1])
@@ -359,7 +380,7 @@ elif halaman == "🗺️ Peta Regional":
         key_on="feature.properties.NAME_3",
         fill_color="YlOrRd", fill_opacity=0.75,
         line_opacity=0.4, line_color="white",
-        legend_name=f"Probabilitas {hazard_peta} (0-1)",
+        legend_name=f"Indeks Kerentanan {hazard_peta} (0–1)",
         nan_fill_color="#cccccc", nan_fill_opacity=0.4,
     ).add_to(m)
 
@@ -370,7 +391,7 @@ elif halaman == "🗺️ Peta Regional":
         style_function=lambda x: {"fillOpacity":0,"weight":0},
         tooltip=folium.GeoJsonTooltip(
             fields=["NAME_3","NAME_2",f"prob_{hazard_peta_key}",f"risk_{hazard_peta_key}"],
-            aliases=["Kecamatan:","Kabupaten:","Probabilitas:","Kelas Risiko:"],
+            aliases=["Kecamatan:","Kabupaten:","Kerentanan:","Kelas Risiko:"],
         ),
     ).add_to(m)
 
@@ -457,13 +478,13 @@ elif halaman == "📊 Teknis & Export":
         df["no_data_longsor"] = df["no_data_longsor"].map({True:"Ya",False:"Tidak"})
         df = df.rename(columns={
             "NAME_2":"Kabupaten","NAME_3":"Kecamatan",
-            "prob_banjir":"Probabilitas Banjir","risk_banjir":"Kelas Risiko Banjir",
-            "prob_longsor":"Probabilitas Longsor","risk_longsor":"Kelas Risiko Longsor",
+            "prob_banjir":"Indeks Kerentanan Banjir","risk_banjir":"Kelas Risiko Banjir",
+            "prob_longsor":"Indeks Kerentanan Longsor","risk_longsor":"Kelas Risiko Longsor",
             "n_titik":"Jumlah Titik Longsor","no_data_longsor":"Tidak Ada Data Longsor",
         })
         col_order = ["Kabupaten","Kecamatan",
-                     "Probabilitas Longsor","Kelas Risiko Longsor",
-                     "Probabilitas Banjir","Kelas Risiko Banjir",
+                     "Indeks Kerentanan Longsor","Kelas Risiko Longsor",
+                     "Indeks Kerentanan Banjir","Kelas Risiko Banjir",
                      "Jumlah Titik Longsor","Tidak Ada Data Longsor"]
         return df[[c for c in col_order if c in df.columns]]
 
@@ -471,14 +492,16 @@ elif halaman == "📊 Teknis & Export":
     def prepare_narasi_csv():
         df = data["l3"].copy()
         df["prob"] = df["prob"].round(4)
+        # Konsistensi terminologi di teks narasi
+        df["narasi"] = df["narasi"].str.replace("probabilitas", "indeks kerentanan", regex=False)
         risk_map = {"low":"Rendah","medium":"Sedang","high":"Tinggi"}
         df["risk"] = df["risk"].map(risk_map).fillna(df["risk"])
         df["hazard"] = df["hazard"].str.title()
         df = df.rename(columns={
             "hazard":"Hazard","NAME_3":"Kecamatan",
-            "prob":"Probabilitas","risk":"Kelas Risiko","narasi":"Narasi L3",
+            "prob":"Indeks Kerentanan","risk":"Kelas Risiko","narasi":"Narasi L3",
         })
-        return df[["Kecamatan","Hazard","Probabilitas","Kelas Risiko","Narasi L3"]]
+        return df[["Kecamatan","Hazard","Indeks Kerentanan","Kelas Risiko","Narasi L3"]]
 
     with col_d1:
         st.download_button(
@@ -487,7 +510,7 @@ elif halaman == "📊 Teknis & Export":
             file_name="xai_ews_v3_prediksi_kecamatan.csv",
             mime="text/csv", use_container_width=True,
         )
-        st.caption("Probabilitas dan kelas risiko longsor + banjir per kecamatan.")
+        st.caption("Indeks kerentanan dan kelas risiko longsor + banjir per kecamatan.")
     with col_d2:
         st.download_button(
             "📥 Narasi Level 3 (CSV)",
